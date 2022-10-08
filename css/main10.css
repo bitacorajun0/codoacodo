@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+h1{
+    color: rgba(55, 33, 221, 0.7);
+}
+
+div{
+    background-color: rgba(212, 136, 233, 0.299);
+    border: 1px solid black;
+    margin: 15px;
+    padding: 10px;
+    font-size: medium;
+    font-style: italic;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#titulo{
+    font-size: 1.5em;
+    font-style:italic;
+    color: rgb(85, 85, 225);
+}

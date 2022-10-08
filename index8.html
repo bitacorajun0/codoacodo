@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 4</title>
+    <link rel="icon" href="/img/bellota.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/main8.css">
+
+    <enlace rel="preconectar" href="https://fonts.googleapis.com">
+        <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+            <enlace href="https: //fonts.googleapis.com/css2? familia= Maven+Pro:peso@400;500 & display=swap"
+                rel="stylesheet">
+
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="http://www.google.com" target="_blank">Google</a>
+            <a href="/indexHTML.html">HTML</a>
+            <a href="/indexCSS.html">Inicio</a>
+            <a href="/index5.html">Clase 1</a>
+            <a href="/index6.html">Clase 2</a>
+            <a href="/index7.html">Clase 3</a>
+            <a href="/index8.html">Clase 4</a>
+            <a href="/index9.html">Clase 5</a>
+            <a href="/index10.html">Clase 6</a>
+            <a href="/index11.html">Clase 7</a>
+            <a href="/index12.html">Clase 8</a>
+        </nav>
+        <h1 id="subir">Clase 4 de CSS</h1>
+        <a href="/txt/Clase 08. CSS 4..pdf" download="">Descargar pdf de la clase</a><br>
+        <hr>
+    </header>
+    <main>
+
+        <a href="#transformaciones">Transformaciones</a><br>
+        <a href="#Transiciones">Transiciones</a><br>
+        <a href="#Animaciones">Animaciones</a><br>
+        <a href="#Responsive">Responsive</a><br>
+
+        <div id="div">
+            <p><span id="titulo">Selectores avanzados</span><br>
+                <u>-"," (coma):</u> <span><u>aplica a todos los elementos, agrupa varios elementos comparten una serie
+                        de declaraciones
+                        iguales.</u></span> Ej: p, a, div {}. <a
+                    href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grouping" target="_blank">mas
+                    info</a><br>
+                <u>-" " (espacio):</u> <span><u>aplica a los selectores descendientes, apunta a elementos contenidos
+                        dentro de otro en
+                        la estructura del documento.</u></span> Ej: div p {}. <a
+                    href="https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_element_element"
+                    target="_blank">mas info</a><br>
+                <u>-">" (mayor):</u> <span><u>aplica a los selectores hijos directos, selecciona los elementos que sean
+                        hijos directos
+                        del contenedor padre, <b> descartando nietos y sucesivos.</b></u></span> Ej: span > a {}. <a
+                    href="https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_element_gt" target="_blank">mas
+                    info</a><br>
+                <u>-"+" (signo mas):</u><span><u>aplica a un hermano adyacente, para seleccionar <b>un elemento</b> que
+                        está
+                        directamente después de otro elemento específico, deben tener el mismo elemento padre</u>
+                </span>. Ej: div + p {}.
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_element_pluss" target="_blank">mas
+                    info</a><br>
+                <u>-"~" (virgulilla):</u><span><u>aplica general de hermanos, selecciona todos los elementos que son los
+                        siguientes
+                        hermanos de un elemento específico.</u> </span> Ej: div ~ p {}. <a
+                    href="https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_element_tilde" target="_blank">mas
+                    info</a> <br>
+                <a href="https://lenguajecss.com/css/selectores/selectores-avanzados/" target="_blank">MAS INFO ACA</a> <br>
+                <a href="https://www.w3schools.com/cssref/css_selectors.asp"target="_blank">MAS INFO ACA</a> <br>
+                
+            </p>
+        </div>
+        <div id="div">
+            <p><span id="titulo">Pseudoclases</span><br>
+                Pseudoclase es un selector que marca los elementos que están en un estado específico o tienen un
+                comportamiento determinado. <br>
+                - :first-child = modifica el estilo del primer elemento de un grupo de
+                elementos hermanos dentro de un contenedor, es decir “el primer hijo de su
+                padre”. Ej: p:first-child {}.
+                <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_firstchild" target="_blank">mas
+                    info</a><br>
+                - :last-child = igual que el anterior pero al reves, es el último hijo de su padre.Ej: p:last-child {}.
+                <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_last-child" target="_blank">mas
+                    info</a><br>
+                - :nth-child(n) = El selector coincide con cada elemento que es el n-ésimo hijo,
+                independientemente del tipo, de su padre. n puede ser un número, una palabra
+                clave o una fórmula. Ej: p:nth-child(2) {}. <a
+                    href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_last-child" target="_blank">mas
+                    info</a><br>
+            </p>
+            <p><span id="titulo">Pseudoclases para hipervínculos</span><br>
+                Se aplican a las etiquetas, que pueden tener cuatro estados: <a
+                    href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">mas info</a> <br>
+                - :link = se refiere a un enlace que todavía no ha sido visitado. <br>
+                - :hover = se refiere a un elemento sobre el que se coloca el puntero del mouse. <br>
+                - :visited = se refiere a un enlace que ya ha sido visitado. <br>
+                - :active = se refiere a cualquier elemento que ha sido activado por el usuario. <br>
+                ejemplos: <br>
+                < a href="https://google.com" target="_blank">Ir a Google < / a> <br>
+                        a:link {color: red;}<br>
+                        a:hover {background-color: yellow;}<br>
+                        a:visited {color: blue;}<br>
+                        a:active {background-color: green; color: white;}<br>
+                        <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_pseudo-class_links"
+                            target="_blank">https://www.w3schools.com/css/tryit.asp?filename=trycss_pseudo-class_links</a>
+            </p>
+        </div>
+        <div id="div">
+            <p><span id="titulo">Pseudoelementos</span><br>
+                Permiten añadir estilos a una parte concreta del documento, están
+                precedida por cuatro puntos (: :): <br>
+                ::first-letter se utiliza para darle estilo a la primera letra de un texto. Ej:
+                p::first-letter{color:blue;} <a href="https://www.w3schools.com/cssref/sel_firstletter.asp"
+                    target="_blank">mas info</a><br>
+                ::first-line se utiliza para darle estilo a la primera línea de un párrafo. Ej:
+                p::first-line{background-color: lightgreen;} <a
+                    href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_firstline" target="_blank">mas
+                    info</a><br>
+                ::selection agrega estilos a una parte del documento que ha sido resaltada por el
+                usuario. Ej: p::selection{
+                background-color: lightsalmon;
+                } <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_selection" target="_blank">mas
+                    info</a><br>
+                ::before y ::after agregan contenido antes y después, respectivamente, del contenido. <a
+                    href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_after"
+                    target="_blank">after</a> y
+                <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_before"
+                    target="_blank">before</a><br>
+            </p>
+        </div>
+        <div id="div">
+            <a href="#subir">Subir</a>
+            <p id="transformaciones"
+                style="text-align:center; border: 1px solid rgb(50, 27, 226); padding: 12px; background-color: #a157e780;">
+                <span id="titulo">Transformaciones, animaciones y transiciones</span><br>
+                <a href="https://www.w3schools.com/css/css3_2dtransforms.asp"target="_blank">MAS INFO ACA</a> <br>
+                Permiten mover, rotar, escalar y sesgar elementos, es decir, efectos visuales en
+                2D y 3D. <br>
+                - transform = aplica una o varias funciones de transf. sobre 1 elemento. <br>
+                - transform-origin = cambia punto de origen del elemento en una transformacion. <br>
+                - transform-style = cambia el tratamiento de los elementos hijos. <br>
+            </p>
+            <p><span id="titulo">2D - Traslaciones (translate)</span><br>
+                Realizan una transformación en la que mueven un elemento de un lugar a otro.Si especificamos un valor
+                positivo en el eje X (horizontal), lo moveremos hacia la derecha, y si especificamos un
+                valor negativo, lo moveremos hacia la izquierda. Lo mismo con el eje Y (vertical). <a
+                    href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_translate"
+                    target="_blank">mas info aca</a><br>
+                - translateX(x) = mueve el elemento una distancia de size x, horizontalmente<br>
+                - translateY(y) = mueve el elemento una distancia de size y, verticalmente<br>
+                - translate(x, y) = propiedad de <b>atajo</b> de las dos anteriores. <br></p>
+
+            <p><span id="titulo">2D - Escalado (scale)</span><br>
+                Realizan una transformación en la que aumentan o reducen el tamaño de un elemento, basándose en el
+                parámetro indicado, que no es más que un factor de escala: <br>
+                - scaleX(fx) = reescala el elemento a un nuevo tamaño con un factor number horizontalmente<br>
+                - scaleY(fy) = reescala el elemento a un nuevo tamaño con un factor number verticalmente<br>
+                - scale(fx, fy) = propiedad de <b>atajo</b> de las dos anteriores. <br>
+                Si utilizamos scale()
+                con dos parámetros iguales, estamos manteniendo la proporción del elemento,
+                pero si utilizamos diferentes valores, acabaría deformandose. <a
+                    href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_scale" target="_blank">mas
+                    info aca</a></p>
+
+            <p><span id="titulo">2D - Rotaciones (rotate)</span><br>
+                Giran el elemento el número de grados indicado: <a
+                    href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_rotate" target="_blank">mas
+                    info aca</a><br>
+                - rotateX(xdeg) = rotacion 2d en direction solo para el eje horizontal<br>
+                - rotateY(ydeg) = rotacion 2d en direction solo para el eje vertical<br>
+                - rotate(deg) = rotacion 2d en direction sobre si mismo. <br></p>
+
+            <p><span id="titulo">2D - Deformaciones (skew)</span><br>
+                Establecen un ángulo para torcer, tumbar o inclinar un elemento en 2D.: <a
+                    href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_skewx" target="_blank">mas
+                    info aca</a><br>
+                - skewX(xdeg) = establece un angulo de direction para una deformacion 2d respecto al eje horizontal<br>
+                - skewY(ydeg) = establece un angulo de direction para una deformacion 2d respecto al eje vertical<br>
+            </p>
+            <div id="ejemplonormal">ejemplo 2d normal</div>
+            <div id="ejemplo2dtranslate">ejemplo 2d translate</div>
+            <div id="ejemplo2dscale">ejemplo 2d scale y translateX</div>
+            <div id="ejemplo2drotate">ejemplo 2d rotate</div>
+            <div id="ejemplo2dskew">ejemplo 2d skew y translateX</div>
+        </div>
+        <div id="div">
+            <p><span id="subtitulo">Funciones 3D</span><br>
+                A las funciones anteriores, también podemos <b>añadir</b> las funciones para hacer uso del <b>eje Z</b>
+                y con esto acceder a las dimensiones espaciales o “3D”. Las propiedades de transformación 3D son las
+                siguientes: <a href="https://www.w3schools.com/css/css3_3dtransforms.asp" target="_blank">mas
+                    info aca</a><br>
+                - translateZ(z) = traslada el elemento una distancia de size en el eje de la profundidad (z). <br>
+                - translate3d(x, y, z) = establece una translacion 3D, donde aplica los parametros de size en cada eje.
+                <br>
+                - scaleZ(fz) = reescala el elemento a un nuevo tamaño con factor numer del eje z. <br>
+                - scale3d(fx, fy, fz) = establece una escala 3D donde aplica los factores a cada eje. <br>
+                - rotateZ(zdeg) = establece una rotacion 2D en direction zdeg grados solo para el eje de Z. <br>
+                - rotate3d(x, y, z, deg) = establece una rotacion 3D aplicando un vector (z, y, z) y el angulo en
+                direction deg. <br>
+                - perspective(n) = establece una perspectiva 3D de size n. <br>
+                - matrix3d(n, n, ...) = establece una matriz de transformacion 3D (16 valores). <br>
+            </p>
+            <div id="ejemplonormal">ejemplo 2d y 3d normal</div>
+            <div id="ejemplo2dy3drotateZ">ejemplo 2d y 3d rotateZ y translateX</div>
+            <div id="ejemplo2dy3dscale3d">ejemplo 2d y 3d scale3d con margin-left: 700px, y translateY</div>
+            <div id="ejemplo2dy3drotate3d">ejemplo 2d y 3d rotate3d(x, y, z, deg) y translate</div>
+        </div>
+        <div id="div">
+            <p> <span id="titulo">Transformaciones múltiples (atajos)</span><br>
+                Para no pisar transformaciones en el mismo elemento usamos, múltiples transformaciones, separándolas
+                mediante un espacio. En el siguiente ejemplo, aplicamos una función de rotación, una función de escalado
+                y una función de traslación de forma simultánea: <br>
+                div { transform: rotate(5deg) scale(2,2) translate(20px, 40px); } <br>
+            </p>
+        </div>
+        <div id="div">
+            <a href="#subir">Subir</a>
+            <p id="Transiciones"> <span id="titulo">Transiciones</span><br>
+                Permiten cambiar los valores de una propiedad durante un <b>tiempo determinado.</b> Es un cambio de
+                estilo con un efecto suavizado entre un estado inicial y un estado final. Se necesida el dato del tipo
+                de estilo al q quiero cambiar y por cuanto tiempo. <a
+                    href="https://www.w3schools.com/css/css3_transitions.asp" target="_blank">mas info aca</a> <br><br>
+                - transition-property = Indica la <b>propiedad</b> que será afectada por la
+                transición. Puede ser una <b>propiedad concreta</b> (width o color, por ej), <b>all</b> para que se
+                aplique a todos los elementos, o <b>none</b> (ninguna transición). <br><br>
+                - transition-duration = <b>0/time.</b> Establece la duración de la transición. Se recomienda comenzar
+                con valores cortos, para que las transiciones sean rápidas y
+                elegantes. Una duración demasiado grande producirá una transición con
+                detenciones intermitentes, y pueden resultar molestas a muchos usuarios. <br><br>
+                - transition--timing-function = indica el ritmo de la transición que queremos
+                conseguir. <br>
+                Se recomienda comenzar con linear y luego utilizar otros valores para variar el ritmo sea al inicio y/o
+                al final de la transición. <br>
+                Los valores que puede tomar la propiedad son: <br>
+                <b> -ease</b> (lento, rapido, lento), siempre es constante <br>
+                <b>-linear </b>(normal, normal, normal), comienza suavemente, aumenta la velocidad y finaliza
+                suavemente. <br>
+                <b>-ease-in</b> (lento, normal, normal), son variaciones que
+                van más lento al principio o al final<br>
+                <b>-ease-out</b> (normal, normal, lento), son variaciones que
+                van más lento al principio o al final <br>
+                <b>-ease-in-out </b>(lento, normal, lento), una mezcla de ambas anteriores <br>
+                <b>-cubic-bezier</b>(personalizado), más detalle la transición. cubic-bezier(A (x1), B(y1), C(x2),
+                D(y2)), <a href="https://cubic-bezier.com/#.17,.67,.83,.67" target="_blank">mas info aca</a><br><br>
+                - transition-delay = retrasar el inicio de la transición los segundos especificados. <br>
+            </p>
+            <p> <span id="titulo">Atajo:</span> se puede poner todo junto siguiento este orden usando la propiedad
+                transition. <a href="https://lenguajecss.com/css/animaciones/transiciones/" target="_blank">mas info
+                    aca</a>
+                <br> ej:<br>
+                div {<br>
+                transition: <b>all</b>(property) <b>0.2s </b>(duration) <b>ease-in </b>(timing-function)(delay);<br>
+                } <br>
+            </p>
+            <div id="transiciones">transition-delay: 2s</div>
+            <section>
+                <div id="div1">linear con transform: rotate()</div><br>
+                <div id="div2">ease con transform: rotate()</div><br>
+                <div id="div3">ease-in con transform: rotate()</div><br>
+                <div id="div4">ease-out con transform: rotate()</div><br>
+                <div id="div5">ease-in-out con transform: rotate()</div><br>
+            </section>
+        </div>
+        <div id="div">
+            <a href="#subir">Subir</a>
+            <p id="Animaciones"><span id="titulo">Animaciones</span><br>
+                <a href="http://www.elpadawan.com/css/animatecss" target="_blank">mas info aca</a> <br>
+                Permite que un elemento cambie gradualmente de un estilo a otro, esto será posible de forma automática,
+                sin que el usuario tenga que realizar una acción concreta. <br>
+                Primero debemos especificar algunos fotogramas clave <b> (@keyframes)</b> para la animación, que
+                contendrán los estilos que tendrá el elemento en determinados momentos.
+                Por defecto, cuando se termina una animación que se ha indicado que se reproduzca
+                sólo una vez, la animación vuelve a su estado inicial (primer fotograma). <br> Debemos ser cuidadosos al
+                indicar el tiempo en las propiedades de duración. Al ser
+                una unidad diferente a las que solemos manejar (px, em, etc...) hay que especificar
+                siempre la s, por segundos, aunque sea un valor igual a 0. <br> Propiedades de las animaciones: <br>
+                - animation-name = permite especificar el nombre del fotograma a utilizar.
+                - animation-duration = 0/time. igual que transiciones. <b>Nota: Si animation-duration no se especifica
+                    la propiedad, no se producirá ninguna animación, porque el valor predeterminado es 0s (0
+                    segundos).</b> <br>
+                - animation-timing-fuction = ease/linear/ease-in/ease-out/ease-in-out/cubic, igual que transiciones <br>
+                - animation--delay = 0/time, igual que transiciones. También se permiten valores negativos. Si usa
+                valores negativos, la animación comenzará como si ya se hubiera estado reproduciendo durante N segundos.
+                <br>
+                - animation-iteration-count = permite indicar el número de veces que se
+                repite la animación, o <b>infinite</b> para que se repita continuamente. <br>
+                - animation-direction = indicar el orden en el que se reproducen
+                los fotogramas, pudiendo escoger un valor de los siguientes: <br>
+                *normal: desde el principio al final<br>
+                *reverse: desde el final al principio <br>
+                *alternate: La animación se reproduce primero hacia delante y luego hacia atrás. <br>
+                *alternate-reverse: La animación se reproduce primero hacia atrás y luego hacia adelante. <br>
+                - animation-fill-mode = qué debe mostrar la
+                animación cuando ha finalizado y ya no se está reproduciendo, si mostrar el estado
+                inicial <b>(backwards), el estado final (forwards) o una combinación de ambas (both).</b><br>
+                - animation-play-state = establecer la animación a estado de
+                reproducción <b>(running) o pausarla (paused).</b>
+            </p>
+            <p><span id="titulo">atajo:</span>todo en uno, <a href="https://www.w3schools.com/css/css3_animations.asp"
+                    target="_blank">mas info aca</a> ej: <br>
+                div {<br>
+                animation: changeColor(nombre), 5s (duracion), linear (timing-function), 0.5s (delay), 4
+                (iteration-count), normal (direccion), forwards running (fill-mode)(play-state) <br>
+                } <br>
+            </p>
+            <div id="animation"></div>
+        </div>
+        <div id="div">
+            <p><span id="titulo">Fotogramas (keyframes: cuadros de animacion) </span> <br>
+                Para definir los fotogramas de una animación. Para que una animación enchulada funcione, debe vincular
+                la animación a un elemento, para eso se usa keyframes.<br>
+                Los selectores <b> from y to</b> son realmente sinónimos de <b>0% y 100%</b>. También es posible
+                utilizar <b>porcentaje</b>. Al usar el porcentaje, puede agregar tantos cambios de estilo como desee. Al
+                modificarlos
+                podremos ir añadiendo nuevos fotogramas intermedios: <br>
+                @keyframes nombre { <br>
+                selectorkeyframes{ <br>
+                propiedad: valor; <br>
+                propiedad: valor;<br>
+                } } <br>
+                Ejemplo: <br>
+                @keyframes cambiarColor { <br>
+                from {background-color: red;} <br>
+                to {background-color: yellow;} <br>
+                } <br>
+
+
+
+            </p>
+            <p><span id="titulo">Encadenar animaciones, (atajo):</span><br>
+                Es posible encadenar múltiples animaciones, separando con comas las
+                animaciones individuales y estableciendo un tiempo de retardo a cada
+                animación posterior: <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">mas
+                    info aca</a><br>
+                .animated {<br>
+                animation:
+                moveRight 5s linear 0, /* Comienza a los 0s */ <br>
+                lookUp 2.5s linear 5s, /* Comienza a los 5s */ <br>
+                moveLeft 2s linear 7.5s, /* Comienza a los 7.5s (5 + 2.5) */ <br>
+                dissapear 2s linear 9.5s; /* Comienza a los 9.5s (2 + 7.5) */ <br>
+                } <br>
+            </p>
+            <p><span id="titulo">Librería de animaciones Animate.css</span><br>
+                Podemos utilizar Animate.css para dar dinamismo a nuestro contenido. <a href="https://animate.style/"
+                    target="_blank">ingresar</a> <br>
+
+            </p>
+
+
+        </div>
+
+        <div id="div">
+            <a href="#subir">Subir</a>
+            <p id="Responsive"><span id="titulo">Responsive</span><br>
+                Una web responsive es aquella que es capaz de adaptarse a cualquier dispositivo, ya sean computadoras, portátiles, tablets o smartphones. <br>
+                El diseño web <b>responsivo</b> adapta la estructura y los diferentes elementos de cada página web a las dimensiones y características de cada pantalla. Por otro lado, el diseño web <b>adaptativo</b> es menos flexible, y se basa en el uso de tamaños y características pre-establecidas. <br>
+                A tener en cuenta: <br><br>
+                -<b>Flujo(The Flow):</b> es cuando una pantalla se vuelve más pequeña, el contenido comienza a crecer verticalmente ocupando más espacio, y el contenido que se encuentra debajo va
+                a ser desplazado hacia abajo. Puede ser: <br>
+                -Adaptativo: lo que vamos a ver la clase que viene. <br>
+                -Estatico: flujo de elementos no se desplaza, no se adapta al ancho del viewport y se pierde contenido o cierto contenido tapa a otro.<br><br>
+                -<b>Unidades de medida:</b> Estaticas (pixel) y relativas (%) <br><br>
+                -<b>Valores minimos y maximos:</b> Ventajas y desventajas de usar: <br>
+                -"width o height : n%"": Si width se establece en un porcentaje y height se establece en "automático", la imagen responderá y se escalará hacia arriba y hacia abajo. <br> 
+                -max-width o max-height: En donde la imagen o elemento se reducirá si es necesario, pero nunca se escalará para ser más grande que su tamaño original.<br><br>
+                -<b>Puntos de control(Breakpoints):</b> Es donde se quiebra el diseño, se crean con los media
+                queries, que nos permiten determinar que si el mínimo del ancho de la pantalla tiene un valor en lugar de otro. <br><br>
+                -<b>Objetos anidados(Nested Objects):</b> Idea de usar contenedores para moverlos mejor <br><br>
+                -<b>Mobile primero, segundo Desktop.</b> Estadísticamente, los dispositivos móviles son mayoritariamente los que acceden a los sitios Web. Los dispositivos de escritorio tienden a utilizarse cada vez menos. <br><br>
+                -<b>System Font</b>(Fuentes de la Web): son descargadas por lo que, cuantas más haya, más lento cargará el sitio.) vs <b>WebFonts</b>(Fuentes del Sistema): más rápidas, pero si NO están en el cliente navegador del usuario
+                se usa una por defecto.) <br>
+                <b>Cuando estamos trabajando con dispositivos móviles tenemos que tener en cuenta que todo se carga.</b><br><br>
+                -<b>Bitmaps</b>(JPG, PNG, GIF.): Recomendadas para muchos detalles y efectos. vs <b>Vectors</b>(SVG (gráficos basados en vectores escalables)): si voy a mostrar un ícono
+                uso Icon Fonts, que son más livianos, pero algunos exploradores viejos no los
+                soportan. <br><br>
+                -<b>Texto responsivo</b>: El tamaño del texto se puede configurar con una unidad "vw",
+                que es el "ancho de la ventana gráfica". De esa forma, el tamaño del texto seguirá
+                el tamaño de la ventana del navegador. Ej: style = " font-size: 10vw "<br><br>
+                <b>Viewport es el tamaño de la ventana del navegador. <br><br><br>
+                1vw = 1% del ancho de la ventana gráfica.</b> <br><br>
+                -<b>Imágenes responsivas</b>: con %, vw u etiquetas de tamaño de pantalla con sus minimos y maximos (width, height, min-width, min-height, max-height y max-width). <br>
+                *<b>background-size:</b> puede ser:<br>
+                -contain: la imagen de fondo se escalará e intentará ajustarse al área de contenido, pero  mantendrá su relación proporcional entre el ancho y el alto de la imagen, como max-width. <br>
+                -% (porcentaje): se extenderá para cubrir toda el área de contenido, se puede poner % en x y y, ej: (100%,100$). <br>
+                -cover: es posible que se recorte parte de la imagen de fondo pero no se pixelea.<br>
+                (dato?) Imagenes de fondo: < picture >(picture: También debe definir un <img>elemento para navegadores que no admitan el < picture >elemento). <br><br>
+
+                -<b>Display</b>(Tipos de caja): Cada elemento tiene un valor de display por defecto, los
+                navegadores le dan a los elementos valores <b>por defecto block e inline</b>:
+                -Block: El elemento empieza en una nueva línea (div, h1-h6, header, etc) <br>
+                -Inline: Puede contener algo de texto dentro de un párrafo sin interrumpir el flujo del párrafo. (span, b, a) <br>
+                -None: Oculta elementos sin eliminarlos, no deja un espacio donde el elemento se encontraba. <br>
+                -Visibility: Igual que NONE pero mantiene un vacío con el mismo tamaño de lo que antes estaba ahí. Por defecto es visible pero puede ser: visible/hidden/collapse:solo para tablas. <br>
+                <mark> -----Utilizar visibility: hidden es muy interesante si queremos que un elemento y su
+                contenido se vuelva invisible, pero siga ocupando su espacio y así evitar que los
+                elementos adyacentes se desplacen, lo que suele ser un comportamiento no
+                deseado en algunas ocasiones cuando se aplica display: none.----- <br>
+                -----Otra opción interesante es utilizar la propiedad opacity junto a transiciones o
+                animaciones, desplazarse desde el valor 0 al 1 o viceversa. De esta forma
+                conseguimos una animación de aparición o desvanecimiento.------ <br>
+            <a href="https://lenguajecss.com/css/maquetacion-y-colocacion/propiedad-display/" target="_blank">https://lenguajecss.com/css/maquetacion-y-colocacion/propiedad-display/</a> </mark><br>
+                -Inline-block: Fluyen con el texto y demás elementos como si fueran elementos en línea y además respetan el ancho, el alto y los márgenes verticales. <br>
+                -Flex: Flexbox <br>
+                -Inline-flex: Version de elemento en linea de del modelo de caja flexbox.
+                -Grid: Usa cuadriculas con el modelo de caja Grid CSS. <br>
+                -Inline-Grid: Version de elemento en linea de del modelo de caja Grid CSS. <br>
+                -List-item: Idem de una lista, < li > <br>
+                -Table: Actua como tabla, < table > <br>
+                -Table-cell: Actua como celda de una tabla, ej: < th > o < td > <br>
+                -Table-row: Actua como fila de una tabla, ej: < tr > <br>
+                -Inherit: Hereda esta propiedad de su elemento padre. <br>
+                -run-in: Muestra un elemento como bloque o en línea, según el contexto. <br>
+
+
+
+
+
+
+
+            </p>
+        </div>
+
+    </main>
+    <footer>
+        <a href="#subir">Subir</a>
+    </footer>
+
+
+
+</body>
+
+</html>

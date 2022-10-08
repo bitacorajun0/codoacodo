@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML4</title>
+    <link rel="icon" href="/img/burbuja.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="http://www.google.com" target="_blank">Google</a>
+            <a href="/indexCSS.html">CSS</a>
+            <a href="/index1.html">Clase 1</a>
+            <a href="/index2.html">Clase 2</a>
+            <a href="/contacto.html">Contacto</a>
+            <a href="/index3.html">Clase 3</a>
+            <a href="/index4.html">Clase 4</a>
+            <a href="/indexHTML.html">Inicio</a>
+        </nav>
+        <br><br>
+        <a href="/txt/Clase 04.HTML.pdf" download="">descargar pdf de la clase</a><br>
+    </header>
+    <!--ATRIBUTOS DE FORMULARIOS: 
+    -action: define el tipo de acción que se llevará a cabo. También podemos indicar la URL a la que se enviará la petición HTTP con toda la información del formulario.
+    -method: si la petición HTTP será GET o POST.
+--LABEL: información para el usuario, especificar la etiqueta del campo del formulario. su atributo es FOR y ID(tienen que ser iguales) donde se ponen los valores input, select o textarea.
+--INPUT: usa todos estos atributos: 
+    -type: determina el tipo de valor de dato de entrada del campo a completar, valores: "text"(alfanumerico), "tel" y "number"(solo nros), "password"(oculta el texto,) "url" y "email"(valida que sea mail o url), file(campo de selección de archivo)y image(define una imagen como botón de envío), button(activa código JavaScript cuando se hace clic en él), checkbox(permite elegir varios opciones), radio(elegir una opción entre varias posibles) color, date(calendario para cargar fecha), hidden(oculto), range(define un control de rango) y submit (boton de enviar)
+    ----------
+    -id:es obligatorio si en el elemento label tiene un atributo for, en tal caso deberá contener un identificador único en la página.
+    -name: nombre asignado al campo cuando se envía la petición HTTP.
+    -size:tamaño de la caja de texto en número de caracteres visibles.
+    -maxlength:tamaño máximo del texto, en número de caracteres, que puede ser escrito en el campo.
+    -value:valor que se asignará al campo cuando se envíe la petición HTTP. Permite asignar un valor por defecto al campo.-->
+    <!-- PLACEHOLDER letrita en gris antes de escribir, REQUIRED no de deja mandar el formulario si no completaste donde lo pusiste-->
+    <header>
+        <h1>formularios</h1>
+    </header>
+    <main>
+        <!--aca mando los datos del formulario a otro html que esta en la misma carpeta, y tambien lo muestra en la barra de url(esto no es seguro por ej, muestra la contraseña)-->
+        <!--DATO: ● id igual a input. ● name: igual a input. ● value: igual que el atributo value del campo input.-->
+        <form action="/show-data.html" target="_blank">
+            <fieldset>
+            <!--FIELDSET: define una sección en un formulario y permite agrupar sus campos.-->
+                <legend>esto se llama legend, esta adentro del fieldset</legend>
+            <!--El elemento <legend> puede contener a otros elementos o se puede utilizar para definir un título.-->
+            <!--size="60" es para que el recuadro sea mas largo, no me funco con nros-->
+                <input size="60" type="text" name="nombre" id="nombre" placeholder="NOMBRE. placeholder, va en input"> <br>
+            <!--aca arriba use PLACEHOLDER y REQUIRED, y aca abajo READONLY-->
+            <!--cada item del formulario incluye un label y un imput-->
+                <label for="apellido">label no se puede escribir</label>
+                <input type="text" name="apellido" id="apellido" value="es un readonly en value" readonly> <br>
+                <label for="edad">label edad</label>
+                <input type="number" name="edad" id="edad"> <br>
+            <!--numeros con comas-->
+                <label for="edad">label edad</label>
+                <input type="number" step="0.01" name="edad" id="edad" placeholder="step=0.01 para que vaya de a centecimos"> <br>
+                <label for="email">label email</label>
+                <input type="email" name="email" id="email"> <br>
+            </fieldset>
+            <label for="url">label url</label>
+            <input type="url" name="url" id="url"> <br>
+            <label for="clave">label clave</label>
+            <input type="password" name="clave" id="clave"> <br>
+            <label for="calendario">label calendario</label>
+            <input type="date" name="calendario" id="calendario"> <br>
+            <label for="rango">label rango</label>
+            <input type="range" name="rango" id="rango"> <br>
+            <label for="color">label color</label>
+            <input type="color" name="color" id="color"> <br>
+            <!--para CHECKBOX Para que funcionen como una unidad, pone en todos el mismo name!!!!, sino en radio no me deja tildar uno solo pq no las reconoce como lo mismo, serian conjuntos de datos distintos. value: valor que se asignará al campo cuando se envíe la petición HTTP.-->
+            <h3>colores sin usar label</h3>
+            <label for="checkbox">label colores checkbox</label> <br>
+            <input type="checkbox" name="colores" id="1" value="1"> rojo
+            <input type="checkbox" name="colores" id="2" value="2"> azul
+            <input type="checkbox" name="colores" id="3" value="3"> amarillo <br><br>
+            <label for="checkbox">para que uno ya arranque marcado</label> <br>
+            <input type="checkbox" name="colores" id="1" value="1" checked> rojo
+            <input type="checkbox" name="colores" id="2" value="2"> azul
+            <input type="checkbox" name="colores" id="3" value="3"> amarillo <br>
+            <!--pone en todos el mismo name!!!!, sino en radio no me deja tildar uno solo pq no las reconoce como lo mismo, serian conjuntos de datos distintos-->
+            <h3>comision sin usar label</h3>
+            <label for="radio">label comision radio</label><br>
+            <input type="radio" name="comision" id="19" value="19">22519
+            <input type="radio" name="comision" id="20" value="20"> 22520
+            <input type="radio" name="comision" id="21" value="21"> 22521 <br>
+            <!--lista desplegable usa SELECT y no imput!! ATRIBUTOS: SIZE: cuantas opciones puedo ver sin desplegar la lista t MULTIPLE: selección simultánea de varios elementos-->
+            <h3>lista desplegable sin label</h3>
+            <label for="nacionalidad">nacionalidad. lista despl con label. se usa select,no imput</label><br>
+            <select name="nacionalidad" id="nacionalidad" size="1">
+                <option value="1" id="0"> </option>
+                <option value="1" id="1">argentina</option>
+                <option value="2" id="2">venezuela</option>
+                <option value="3" id="3">colombia</option>
+                <option value="4" id="4">paraguayo</option>
+                <option value="5" id="5">uruguayo</option>
+                <option value="6" id="6">chileno</option>
+            </select>
+            <br> <br>
+            <label for="hidden">label hidden</label>
+            <input type="hidden" name="hidden" id="hidden"><br>
+            ????? <label for="celular">label celular</label>
+            <input type="tel" name="celular" id="celular"> <br>
+            <!--comentario usa TEXTAREA y no imput!! aca abajo hay un comentario de 30 columnas y 10 filas-->
+            <label for="comentario">label comentario</label> <br>
+            <textarea name="comentario" id="comentario" cols="30" rows="5"></textarea> <br>
+
+            <label for="file">label file</label>
+            <input type="file" name="file" id="file"> <br>
+            <label for="button">label button</label>
+            <input type="button" name="button" id="button"> <br>
+
+            ????? <label for="file">image</label>
+            <input type="image" name="file" id="file"> <br>
+
+
+
+            <br><br>
+            <input type="reset" value="borrar">
+            <input type="submit" value="enviar">
+        </form>
+
+        <aside>
+            <p>publicidad</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>pie de pagina. sitio desarrollado en clase 4 HTML</p>
+    </footer>
+
+</body>
+
+</html>

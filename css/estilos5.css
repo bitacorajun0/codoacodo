@@ -1,0 +1,46 @@
+  /*orden de prioridad:
+  !important (cualquier-selector { color: #FF0000!important; }), inline (<p style=“color:#FF0000;”>Lorem Ipsum</p>), 
+  ID(#parrafo { color: #FF0000; }), 
+  clases atributos y pseudoclases (.parrafo { color: #FF0000; }), 
+  y etiquetas y pseudoetiquetas (p { color: #FF0000; }).
+  mas info en https://developer.mozilla.org/es/docs/Web/CSS/Specificity
+  /*atributos:
+  margin: 10px; margin establece el margen para los cuatro lados
+  padding: 5px; padding establece el espacio de relleno
+  font-family: Verdana; cambia el tipo de letra
+  font-size: 130%; margin-left: 50px;
+  
+  
+  
+  
+  */
+  /*este es selector universal*/
+    *{
+        color: black;
+    }
+/*selector por etiqueta o tipo (<tag>)*/
+h6{
+    color: white;
+    background-color: darkblue ;
+} 
+body{
+    padding: 0;
+    margin: 0;
+}
+/*selector por id*/
+#rosita{
+    color: violet;
+    background-color: blue;
+}
+#negro{
+    color: antiquewhite;
+    background-color: black;
+}
+/*selector por clase*/
+.centrado{
+    text-align: center;
+}
+.rojo{
+    border: 5px outset red;
+    text-align: center
+}

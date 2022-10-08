@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 2</title>
+    <link rel="icon" href="/img/bellota.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/main6.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="http://www.google.com" target="_blank">Google</a>
+            <a href="/indexHTML.html">HTML</a>
+            <a href="/indexCSS.html">Inicio</a>
+            <a href="/index5.html">Clase 1</a>
+            <a href="/index6.html">Clase 2</a>
+            <a href="/index7.html">Clase 3</a>
+            <a href="/index8.html">Clase 4</a>
+            <a href="/index9.html">Clase 5</a>
+            <a href="/index10.html">Clase 6</a>
+            <a href="/index11.html">Clase 7</a>
+            <a href="/index12.html">Clase 8</a>
+        </nav>
+        <h1 id="subir">Clase 2 de CSS</h1>
+        <a href="/txt/Clase06.CSS2.pdf" download="">Descargar pdf de la clase</a><br>
+        <hr>
+    </header>
+
+    <main>
+        
+        <div id="div">
+            <span id="titulo">datos</span><br>
+            <u> para poner de fondo una imagen:</u> <br>
+            style='background-image: url("imagenes/foto.jpg") <br>
+            hay mas tributos, si la quiero repetir o bla, buscar en w3schools. <br>
+            Algo de mas info aca: <br>
+            <a href="https://desarrolloweb.com/articulos/fondos-css" target="_blank">https://desarrolloweb.com/articulos/fondos-css</a><br>
+            <a href="https://developer.mozilla.org/es/docs/Web/CSS/backdrop-filter" target="_blank">y aca sobre jugar ocn el contraste y blurreo y cositas de la imagen de fondo</a>
+
+        </div>
+            
+        <div id="div"> <span id="titulo"> tipografia:</span><br>
+            -font-size: tamaño de la fuente (px, em, rem).<br>
+            -font-style: estilo de fuente (normal, italic, oblique).<br>
+            -font-family: lista de fuentes (arial, helvetica, sans-serif, etc).<br>
+            -font-weight: grosor (peso) de la fuente (bold, 400, 600, 800).<br>
+            <u>Generic Font Families</u><br>
+            <span style="font-family: serif">-Serif: Crean una sensación de formalidad y elegancia</span><br>
+            <span style="font-family: sans-serif"> -Sans-serif: Crean un aspecto moderno y minimalista.</span><br>
+            En las pantallas de las computadoras, sans-serif es más fáciles de leer que serif.<br>
+            <span style="font-family: Monospace">-Monospace: Crean un aspecto mecánico.</span><br>
+            <span style="font-family: Cursive">-Cursive: imitan la escritura humana.</span><br>
+            <span style="font-family: Fantasy">-Fantasy: son fuentes decorativas/divertidas.</span><br>
+            mas info en <a href="https://www.w3schools.com/css/css_font.asp" target="_blank">https://www.w3schools.com/css/css_font.asp</a>
+        </div>
+
+        <div id="div"><span id="goooglefonts">GOOGLE FONTS</span> se pueden usar mas de una: <br>
+            1. Ingresar a <a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a> <br>
+            2. Ingresar en la fuente deseada y
+            hacer clic en “Select this style”<br>
+            3. Pegar el código en el head de
+            nuestro HTML<br>
+            4. Copiar y pegar la regla CSS.<br></div>
+
+        <div style="background-color: rgb(216, 146, 216)"><b>colores</b><br>
+            -Por palabra clave: red, blue, etc. <br>
+            -Rgb(red, green, blue): (0,0,0) es negro y (255,255,255) es blanco.<br>
+            -RGBA (rgb + alpha): alpha hace referencia a la transparencia del elemento, siendo 1 opaco u 0 transparente. Ej: (5,23,108,0.5).<br>
+            -Hegadecimal: cada par de letras simboliza el valor de RGB. FF nro maximo y 00 nro minimo.<br>
+            <mark> chequear aca info sobro nros binarios.</mark></div>
+
+ <div id="div">
+
+        <span id="titulo">Font-size(tamaño de la fuente):</span><br>
+       El tamaño se puede calcular de píxeles a em usando esta fórmula: pixels/16 = 1em. <br>
+        Mas info aca: <br>
+        <a href="https://lenguajecss.com/css/modelo-de-cajas/unidades-css/" target="_blank">https://lenguajecss.com/css/modelo-de-cajas/unidades-css/</a><br>
+        <a href="https://www.w3schools.com/css/css_units.asp" target="_blank">https://www.w3schools.com/css/css_units.asp</a><br>
+        <a href="https://escss.blogspot.com/2014/01/medidas-Css-Absolutas-relativas.html" target="_blank">https://escss.blogspot.com/2014/01/medidas-Css-Absolutas-relativas.html</a><br>
+        Ejemplo de tamaño de fuente responsive en: 
+        <a href="https://www.w3schools.com/css/css_font_size.asp" target="_blank">https://www.w3schools.com/css/css_font_size.asp</a></p>
+        <p style='font-size: 16px;'>Fuente en 16px = 1em</p>
+        <p style='font-size: 24px;'>Fuente en 24px = 2em</p>
+        <p style='font-size: 32px;'>Fuente en 32px = 3em</p>
+    </div>
+
+    <div id="div">
+        <span id="titulo">Font-style: determina el estilo del texto. Posee tres atributos:</span><br>
+        <p style='font-style: normal;'>Párrafo con estilo normal.</p>
+        <p style='font-style: italic;'>Párrafo con estilo cursiva.</p>
+        <p style='font-style: oblique;'>Párrafo con estilo oblicuo.</p>
+    </div>
+
+    <div id="div">
+        <span id="titulo">Propiedades font-family y font-weight</span><br>
+        Font-family establece la familia tipográfica.Los nombres compuestos se colocan entre comillas. Las fuentes sólo
+        se visualizarán si el usuario las tiene instaladas en su dispositivo. <br>
+        Se recomienda agregar ENTRE 4 O 5 fuentes, separadas entre comas. Por ej: <br>
+        div { <br>
+        font-family: Georgia, 'Times New Roman', Verdana, serif;<br>
+        } <br>
+        Y ademas, <b>font-weigth</b>: Establece qué tan gruesos o delgados deben mostrarse los caracteres en el texto.
+        (<span style="font-weight: normal;"> normal</span>|
+        <span style="font-weight: bold;">bold</span>|
+        <span style="font-weight: bolder;">bolder</span>|
+        <span style="font-weight: lighter;">lighter</span>|
+        number|
+        <span style="font-weight: initial;">initial</span>|
+        <span style="font-weight: inherit;">inherit</span>) <br>
+        <a href="https://www.w3schools.com/cssref/pr_font_weight.asp" target="_blank">sobre font-weigth</a><br>
+        -pueden ser ANIMADAS Y MAS COSAS. ver aca: <br>
+        <a href="https://www.w3schools.com/cssref/css_animatable.asp" target="_blank">animatable</a> <br>
+        <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_js_font-weight" target="_blank">con js y un boton</a>
+        <br>
+    </div>
+
+    <div id="div">
+        <span id="titulo">iconos: fontawesome y flaticon</span><br>
+        Hay varias formas de agregar iconos a tu sitioweb, en <a href="https://fontawesome.com/" target="_blank">https://fontawesome.com/</a> (aca no se descargar las imagenes, se ponen las clases), hay iconos gratuitos y pagos, te registras en el sitio y te envían un mail con una etiqueta que podés agregar al < head> de tu HTML. Luego podés elegir los íconos a utilizar y agregar a tu página. <br>
+        <b>Otra opcion es flaticon</b> <a href="https://www.flaticon.es/" target="_blank">https://www.flaticon.es/</a> <br>
+        Se pueden descargar o utilizar directamente vinculando las imágenes desde su web.
+        <a href="https://www.youtube.com/watch?v=rOVQN-kmhxw&feature=youtu.be" target="_blank">mas info aca</a>
+    </div>
+
+    <div id="div">
+            <ol id="titulo">Cómo elegir una paleta de colores</ol>
+            <li type="circle">
+                <a href="https://www.colorhunt.co/" target="_blank">https://www.colorhunt.co/</a>
+            </li>
+            <li type="circle">
+                <a href="http://palettr.com/" target="_blank">http://palettr.com/</a>
+            </li>
+            <li type="circle">
+                <a
+                    href="https://color.adobe.com/es/create/color-wheel"target="_blank">https://color.adobe.com/es/create/color-wheel</a>
+            </li>
+            <li type="circle">
+                <a
+                    href="https://www.adobe.com/es/express/feature/design/color-palette" target="_blank">https://www.adobe.com/es/express/feature/design/color-palette</a>
+            </li>
+            </li>
+            <li type="circle">
+                <a href="https://htmlcolorcodes.com/es/" target="_blank">https://htmlcolorcodes.com/es/</a>
+            </li>
+            </li>
+            <li type="circle">
+                <a href="https://imagecolorpicker.com/es" target="_blank">https://imagecolorpicker.com/es</a>
+            </li>
+            </li>
+            <li type="circle">
+                <a href="https://blog.hubspot.es/marketing/colores-para-paginas-web" target="_blank">Colores en diseño web. Cómo elegir
+                    la combinación perfecta:</a>
+            </li>
+        </div>
+
+
+
+
+    </main>
+    <footer>
+        <a href="#subir">Subir</a>
+    </footer>
+
+</body>
+
+</html>

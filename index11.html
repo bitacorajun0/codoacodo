@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP</title>
+    <link rel="icon" href="/img/bellota.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/main11.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="http://www.google.com" target="_blank">Google</a>
+            <a href="/indexHTML.html">HTML</a>
+            <a href="/indexCSS.html">Inicio</a>
+            <a href="/index5.html">Clase 1</a>
+            <a href="/index6.html">Clase 2</a>
+            <a href="/index7.html">Clase 3</a>
+            <a href="/index8.html">Clase 4</a>
+            <a href="/index9.html">Clase 5</a>
+            <a href="/index10.html">Clase 6</a>
+            <a href="/index11.html">Clase 7</a>
+            <a href="/index12.html">Clase 8</a>
+        </nav>
+        <h1 id="subir">Clase 7 de CSS - BOOTSTRAP</h1>
+        <a href="/txt/Clase11.Bootstrap.pdf" download="">Descargar pdf de la clase</a>
+        <hr>
+    </header>
+    <main>
+        <div class="container">
+            <p>
+                <span id="titulo">Bootstrap</span><br>
+                ● Fácil de usar: Sólo se necesita agregar las clases de Bootstrap a los elementos HTML. <br>
+                ● Responsive: Con su sistema de grilla dividida en 12 columnas permite crear páginas Web adaptables a
+                cualquier dispositivo. <br>
+                ● Personalizable: Se pueden seleccionar para su descarga únicamente los elementos que necesitemos en
+                nuestro proyecto, o utilizarlo online. <br><br>
+                Hay dos maneras de usar Bootstrap: <br>
+                ● Sin conexión: Descargar desde <a href="boostrap.com" target="_blank">boostrap.com</a>, en este caso
+                los archivos deben estar en la misma carpeta del proyecto y ser referenciados en el <u>
+                    < head>
+                </u> del documento HTML con <u> link></u> (las versiones alfa y beta no se suelen usar en sitios
+                productivos. <b>Siempre se trabaja con la última versión estable a la fecha</b>): <br><br>
+                link rel="stylesheet" href="css/bootstrap.min.css"><br>
+                // script src="js/bootstrap.min.js"> / script> <br> <br>
+                ● Incluir BootstrapCDN (Content Delivery Network) en el <b> head > </b>. Este método tiene la ventaja de
+                no necesitar instalación alguna, pero nuestro sitio va a estar conectado permanentemente con el sitio
+                Web de Bootstrap, proveyendo los estilos. <a href="https://www.hostinger.com.ar/tutoriales/que-es-cdn"
+                    target="_blank">+info</a> o <a href="https://www.hostinger.com.ar/tutoriales/que-es-cdn"
+                    target="_blank">aca</a> <br> <br>
+                link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+                crossorigin="anonymous"> <br><br>
+                Para buscar este link de la ultima version de Bootstrap voy a su pagina, en la parte de include via CDN
+                y copio y pego los dos links en la cabeza de HTML de la pagina con la que quiero trabajar. <br>
+                <b>O sino escribo bs5-$ y me va a abrir toda la plantilla como cuando pongo !</b>
+            </p>
+        </div>
+        <div class="container">
+            <p>
+                <span id="titulo">Class Container:</span> Los contenedores sirven para crear una “caja” o “contenedor”
+                dentro de la
+                que se coloca el contenido de una página web. Cuando aplicamos a un elemento HTML la clase container , a
+                ese elemento
+                se le aplica un <b>ancho y un padding determinado y además se centra horizontalmente en la página
+                    web.</b> <br>
+                Bootstrap proporciona 3 tipos de contenedores diferentes, cada uno con sus características distintivas,
+                <a href="https://getbootstrap.com/docs/5.0/layout/containers/" target="_blank">+ info aca.</a><br><br>
+                ● .container: establece un ancho máximo o max-width para cualquier tamaño de pantalla o anchos definidos
+                por los
+                breakpoints responsive. Es <b>sensible al dispositivo</b> que utilicemos. Su ancho es determinado por el
+                ancho de viewport.
+                Es el contenedor más usado de Bootstrap. Al modificar el tamaño del viewport, el ancho máximo de este
+                contenedor se corresponde con el “punto de corte”
+                definido. <br>
+                ● .container-fluid: establece un width: 100% del viewport en todos los breakpoints. Siempre ocupa el
+                100% del ancho de la pantalla. <br>
+                ● .container- {breakpoint}: es similar al container-fluid, pero posee un ancho de 100% solamente hasta
+                el breakpoint definido. <a href="https://getbootstrap.com/docs/5.0/layout/containers/#how-they-work"
+                    target="_blank">+ info aca</a><br>
+            </p>
+        </div>
+
+        <div class="container">
+            <div style="font-size: 50px; text-align: center;" id="titulo">Grid</div>
+            La clase container es la de mayor jerarquía y actúa como un contenedor de
+            filas (rows), que a su vez contienen a las columnas (col). <br>
+            ● container:delimita un ancho máximo de acuerdo al tamaño de la pantalla <br>
+            ● row:define un grupo horizontal de columnas <br>
+            ● col: proporciona hasta 12 contenedores por fila. <br>
+            <div class="container">
+                <div class="row">
+                    <!-- 2 columnas dentro de un div -->
+                    <div class="col">
+                        Fila 1 - Columna 1 de 2
+                    </div>
+                    <div class="col">
+                        Fila 1 - Columna 2 de 2
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- 3 columnas dentro de un div -->
+                    <div class="col">
+                        Fila 2 - Columna 1 de 3
+                    </div>
+                    <div class="col">
+                        Fila 2 - Columna 2 de 3
+                    </div>
+                    <div class="col">
+                        Fila 2 - Columna 3 de 3
+                    </div>
+                </div>
+            </div>
+            <br>
+            Podemos establecer el ancho de una columna y hacer que las columnas hermanas tomen una nueva dimensión
+            automáticamente a su alrededor. <br>
+            Las otras columnas cambiarán de tamaño sin importar el ancho de la columna central.<br>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        1 de 3
+                    </div>
+                    <div class="col-6">
+                        2 de 3 (6 col)
+                    </div>
+                    <div class="col">
+                        3 de 3
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        1 de 3
+                    </div>
+                    <div class="col-5">
+                        2 de 3 (5 col)
+                    </div>
+                    <div class="col">
+                        3 de 3
+                    </div>
+                </div>
+            </div>
+            bs5-grid-row
+        </div>
+        <div class="container">
+            <span id="titulo">Sistema de grillas</span><br>
+            El sistema de grillas de Bootstrap permite hasta 12 columnas en la página.
+            Es posible agrupar las columnas para crear columnas más amplias. Este
+            sistema es responsivo, por lo tanto, las columnas se reorganizan
+            automáticamente dependiendo del tamaño de la pantalla. Recordemos que
+            siempre deben sumar 12. <a href="https://getbootstrap.com/docs/5.1/layout/grid/" target="_blank">+ info
+                aca</a>
+        </div>
+        <div class="container">
+            <span id="titulo">Clases receptivas</span><br>
+            El sistema de cuadrícula Bootstrap tiene seis clases:<br>
+            ● <b>.col-</b> (dispositivos extra pequeños: ancho inferior a 576 px)<br>
+            ● <b>.col-sm-</b> (dispositivos pequeños: ancho igual o superior a 576 px)<br>
+            ● <b>.col-md-</b> (dispositivos medianos: ancho igual o superior a 768 px)<br>
+            ● <b>.col-lg-</b> (dispositivos grandes: ancho igual o superior a 992 px)<br>
+            ● <b>.col-xl-</b> (dispositivos xlarge: ancho igual o superior a 1200 px)<br>
+            ● <b>.col-xxl-</b> (dispositivos xxlarge: igual o superior a 1400 px)<br>
+            Las clases anteriores se pueden combinar para crear diseños más dinámicos y flexibles. <br>
+            Cada clase se escala, por lo que si desea establecer los mismos anchos para <b>sm y md</b>, sólo necesita especificar <b>sm</b>. <a href="https://getbootstrap.com/docs/5.0/layout/columns/" target="_blank">+ info</a><br>
+        </div>
+        <div class="container">
+            <span id="titulo">Componentes  </span>    <br>   
+            Los componentes de Bootstrap permiten acelerar el proceso de diseño. Son soluciones prediseñadas y personalizables. <a href="https://getbootstrap.com/docs/5.1/components/accordion/" target="_blank">+ info</a> <br>
+            ● <span style="font-size: 30px;">Navbar:</span> permite crear una barra de navegación o menú. Viene preparado con el típico icono de hamburger (tres líneas horizontales) que aparece en la versión móvil. <a href="https://www.w3schools.com/bootstrap5/bootstrap_navbar.php" target="_blank">+ info</a> <br>
+            ● <span style="font-size: 30px;">Alerts:</span> son como cajas de texto con cierto tipo de diseño. Se suelen usar para proporcionar información puntual al usuario. <a href="https://getbootstrap.com/docs/5.1/components/alerts/" target="_blank">+ info</a> <br>
+            ● <span style="font-size: 30px;">Carousel:</span> Utiliza un sistema de slides para recorrer varios elementos. Permite contener fotografías que van pasando dentro del mismo espacio. Es un componente de presentación de diapositivas. <a href="https://getbootstrap.com/docs/5.1/components/carousel/" target="_blank">+ info</a> <br>
+            ● <span style="font-size: 30px;">Dropdowns:</span> Sirven para que el usuario pueda escoger una opción en un
+            conjunto de posibilidades. Genera un menú desplegable hacia abajo o hacia
+            a la derecha que permite incluir vínculos. Con el atributo active se puede
+            marcar alguna opción del menú. Se pueden alternar para mostrar listas de
+            enlaces y más. <a href="https://getbootstrap.com/docs/5.1/components/dropdowns/" target="_blank">+ info</a> <br>
+            ● <span style="font-size: 30px;">Breadcrumb: (o migas de pan):</span> Sirven para mostrar la situación del usuario
+            dentro de una página. Indica al usuario dónde está y de dónde viene. Se
+            agregan dentro de la etiqueta semántica < nav >. El atributo active es el que
+            indica en qué página estamos ubicados. <a href="https://getbootstrap.com/docs/5.1/components/breadcrumb/" target="_blank">+ info</a> <br>
+            ● <span style="font-size: 30px;">Collapse (accordion):</span> Este elemento añade un botón capaz de ocultar o
+            mostrar cierto contenido, es decir, crear elementos colapsables. Son
+            contenidos que se despliegan y su uso es común en la sección “preguntas
+            frecuentes”. <a href="https://getbootstrap.com/docs/5.1/components/collapse/" target="_blank">+ info</a> <br>
+            ● <span style="font-size: 30px;">Buttons:</span> Los botones por defecto son elementos <b>inline</b>, pero de ser necesario
+            un comportamiento similar a <b>inline-block</b> podemos aplicar la clase <b>btn-block</b>. <a href="https://getbootstrap.com/docs/5.1/components/buttons/" target="_blank">+ info</a> <br>
+            ●<span style="font-size: 30px;">Cards:</span> Las cards o tarjetas, sirven para agrupar contenido. Se suelen utilizar
+            para crear listas de elementos, por ejemplo, artículos de blog, colecciones de
+            elementos, etc.. <a href="https://getbootstrap.com/docs/5.1/components/card/" target="_blank">+ info</a>
+            <br>
+            ●<span style="font-size: 30px;">Forms:</span> Bootstrap aplica estilos a los elementos de tipo formulario para
+            convertirlos en elementos responsive, mejorar su apariencia y permitirnos crear diferentes alineaciones. <a href="https://getbootstrap.com/docs/5.2/forms/overview/" target="_blank">+ info</a><br>
+            ●<span style="font-size: 30px;">Tables:</span> Boostrap dispone de distintas clases para dar estilo a las tablas, estas son algunas de ellas: <a href="https://getbootstrap.com/docs/5.1/content/tables/" target="_blank">+ info</a>
+            <br>
+            - .table (por defecto) <br>
+            - .table-hover <br>
+            - .table-striped <br>
+            ●<span style="font-size: 30px;">Progress bar (barras de progreso):</span> Normalmente se las utiliza para
+            indicar cuánto se ha avanzado en una actividad. Para crear una barra de progreso debemos definir un <b>div</b> con la clase <b>"progress"</b> y un <b>div</b> interno al anterior con la clase <b>"progress-bar"</b>. <a href="https://getbootstrap.com/docs/5.1/components/progress/" target="_blank">+ info</a><br>
+            ●<span style="font-size: 30px;">Ventanas modales:</span> Son ventanas emergentes que se abren cuando el usuario
+            interactúa con algún elemento. Para funcionar, <b>modal</b> usa los atributos <b>data-toggle</b> con el valor <b>“modal” y data-target</b> con el <b>id</b> del modal que se crea. <br>
+             Para cerrar el modal se usa la etiqueta html de <b>data-dismiss=”modal”</b>. Modal es un contenedor. <a href="https://getbootstrap.com/docs/5.1/components/modal/" target="_blank">+ info</a><br>
+        </div>
+        <div class="container">
+            <span id="titulo">Otros Frameworks CSS</span> <br>
+            ●<span style="font-size: 30px;">Materialize CSS</span> es un framework CSS que implementa el tema de diseño “Material Design”. Ofrece componentes material listos para usar, que se pueden integrar de  una manera cómoda en los sitios web, consiguiendo un diseño guiado por las
+            directrices de aplicaciones y sitios de Google.
+            <a href="https://materializecss.com/" target="_blank">+ info</a><br>
+            ●<span style="font-size: 30px;">Tailwind CSS</span> tiene clases y una gran biblioteca que te permitirá acelerar el proceso de diseño de cualquier sitio web. Estos frameworks ofrecen estilos CSS atómicos, aunque también permite crear componentes, lo deja más del lado del
+            desarrollador, que los podrá personalizar a su gusto.
+
+            <a href="https://tailwindcss.com/" target="_blank">+ info</a><br>
+
+
+
+        </div>
+
+
+        <div class="container">
+            <span id="titulo">Artículos de interés:</span><br>
+            <a href="https://getbootstrap.com/docs/5.1/utilities/api/" target="_blank"><b> Utilidades:</b> Se aplican estilos para bordes, texto, alineaciones, colores (texto y fondo), sombras, entre otros.</a> <br>
+            <a href="https://getbootstrap.com/docs/5.1/content/tables/" target="_blank">Tablas</a> <br>
+            <a href="https://getbootstrap.com/docs/5.1/content/images/" target="_blank">Imágenes</a> <br>
+            <a href="https://mdbootstrap.com/docs/standard/components/button-group/" target="_blank">Botones agrupados</a> <br>
+            <a href="https://www.w3schools.com/bootstrap5/" target="_blank">Ayuda de W3Schools</a> <br>
+            Material multimedia. <br>
+            <a href="https://www.youtube.com/watch?v=1kNwZbRiVcQ" target="_blank">Fundamentos de Bootstrap 5</a> <br>
+            <a href="https://www.youtube.com/watch?v=rIEoF6B_GNY" target="_blank">Descargar e instalar Bootstrap</a> <br>
+            <a href="https://www.youtube.com/watch?v=LoHV4O8PLXc" target="_blank">Instalación via CDN</a> <br>
+            <a href="https://www.youtube.com/watch?v=k8ovx51cEBg" target="_blank">Bootstrap Grid</a> <br>
+            <a href="https://www.youtube.com/watch?v=1nfJdlmT3A0" target="_blank">Curso de fundamentos de Bootstrap</a>
+        </div>
+    </main>
+
+    <footer>
+        <a href="#subir">Subir</a>
+    </footer>
+</body>
+
+</html>

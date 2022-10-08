@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 5</title>
+    <link rel="icon" href="/img/bellota.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/main9.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="http://www.google.com" target="_blank">Google</a>
+            <a href="/indexHTML.html">HTML</a>
+            <a href="/indexCSS.html">Inicio</a>
+            <a href="/index5.html">Clase 1</a>
+            <a href="/index6.html">Clase 2</a>
+            <a href="/index7.html">Clase 3</a>
+            <a href="/index8.html">Clase 4</a>
+            <a href="/index9.html">Clase 5</a>
+            <a href="/index10.html">Clase 6</a>
+            <a href="/index11.html">Clase 7</a>
+            <a href="/index12.html">Clase 8</a>
+        </nav>
+        <h1 id="subir">Clase 5 de CSS</h1>
+        <a href="/txt/Clase09.CSS5.pdf" download="">Descargar pdf de la clase</a>
+        <hr>
+    </header>
+
+    <main>
+
+        <div class="topnav">
+            <a href="#alineacion">alineacion</a>
+            <a href="#practica">practica</a>
+            <a href="https://www.youtube.com/watch?v=0aIEWE5aOcg&list=PL8x5kYLoGRia7WU0LudH7GyWr7bpTqVTi&index=15" target="_blank">explicacion de profe</a>
+        </div>
+
+        <div id="div">
+            <p><span id="titulo">Puntos de corte (Breakpoints)</span><br>
+                Se usa @media para determinar sobre que valor se va a trabajar. <br>
+                Ej: <br>
+                .example {<br>
+                padding: 20px;<br>
+                color: white;<br>
+                }<br>
+                <span style="color: grey;"> /* Extra small devices (600px and down) */</span><br>
+                @media only screen and (max-width: 600px) {<br>
+                .example {background: red;}<br>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_navbar"
+                    target="_blank">menu responsivo</a><br>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_ex2" target="_blank">4
+                    columnas responsivas</a><br>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_breakpoints"
+                    target="_blank">sitio responsivo de 1 Breakpoints</a><br>
+                <a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_col-s" target="_blank">otro
+                    sitio responsive</a>
+            </p>
+        </div>
+
+        <div id="div">
+            <p><span id="titulo">Flexbox</span><br>
+                Sistema de cajas flexibles, está diseñado para crear estructuras de una sola dimensión. <a
+                    href="https://lenguajecss.com/css/maquetacion-y-colocacion/flexbox/" target="_blank">mas info
+                    aca</a> <br>
+                <b>Identificar cual va a ser mi eje principal y mi eje secundario, si de filas o de columnas.</b> <br>
+                ● Contenedor: Es el elemento padre que tendrá en su interior cada uno de
+                los ítems flexibles. <br>
+                ○○○ Eje principal: Los contenedores flexibles tienen una orientación principal
+                específica. Por defecto es el eje horizontal. <br>
+                ○○○ Eje secundario: La orientación secundaria es perpendicular a la principal. <br>
+                ● Ítem: Son los elementos hijos flexibles del contenedor. <br><br>
+                Para activar el modo <b>flexbox</b>, usamos sobre el elemento contenedor la propiedad <b>display</b> y
+                especificamos el valor <b>flex o inline-flex</b> (dependiendo
+                de cómo queramos que se comporte el contenedor). Ej: <br>
+                < div class="container"> (FLEX CONTENEDOR) <br>
+                    ...............< div class="item item-1"> 1 < /div> (FLEX ITEM) <br>
+                            ...............< div class="item item-2"> 2 < /div> (FLEX ITEM) <br>
+                                    ...............< div class="item item-3"> 3 < /div> (FLEX ITEM)<br>
+                                            < / div> <br><br>
+            </p>
+        </div>
+        <div id="div">
+            <p>
+                *DISPLAY PROPIEDADES: <BR>
+                - inline-flex: contenedor en linea, ocupa solo el contenido. <br>
+                - flex: contenedor en bloque, ocupa todo el ancho del padre. <br><br>
+            </p>
+        </div>
+        <div id="div">
+            <p>
+                *DIRECCION DE EJES: manipula direccion y comportamiento de los items a los largo del eje principal del
+                contenedor.<BR>
+                - flex-direction: cambia la orientacion del eje principal, <b>por defecto es horizontal</b> <br>
+                -- row: direccion del eje principal en horizontal, determinan el orden de los elementos, modificamos el
+                flujo del eje principal. <br>
+                -- row-reverse: direccion del eje principal en horizontal(invertido), determinan el orden de los
+                elementos, modificamos el flujo del eje principal. <br>
+                -- column: direccion del eje principal en vertical <br>
+                -- column-reverse: direccion del eje principal en vertical (invertido) <br><br>
+                - flex-wrap: evita o permite el desbordamiento (multilinea) <b>(nowrap, valor por defecto)</b> <br>
+                -- nowrap: items en una sola linea, no permite desborde del contenedor. <br>
+                -- wrap: items en modo multilinea, permite desborde. <br>
+                -- wrap-reverse: itens en modo multilinea, pero direccion inversa. <br><br>
+                <span id="titulo"> Atajo(short-hand): dirección de los ejes</span><br>
+                *flex-flow: podemos resumir los valores de las propiedades flex-direction y flex-wrap, especificandose
+                en una sola propiedad. Ej: <br>
+                .container { <br>
+                flex-flow: row wrap; <br>
+                } ESTO INCLUYE: ((flex-flow: < flex-direction>
+                    < flex-wrap>; )) <br><br>
+            </p>
+        </div>
+
+        <div class="flex-container" id="div">
+            <span id="practica"></span>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+        </div>
+
+        <div id="div">
+            <p>
+                <span id="titulo"><span id="alineacion"></span> Propiedades de alineación</span><br>
+                De las 4, la primera relativa al eje principal y las restantes al secundario. <br><br>
+
+                ● justify-content: Alinea los ítems del eje principal. <br>
+                ●●● flex-start: agrupa los items al PRINCIPIO del eje principal. <br>
+                ●●● flex-end: agrupa los items al FINAL del eje principal. <br>
+                ●●● center: agrupa los items al CENTRO del eje principal. <br>
+                ●●● space-between: distribuye los items dejando el maximo espacio para separarlos. <br>
+                ●●● space-around: distribuye los items dejando el mismo espacio alrededor de ellos (de izq a der). <br>
+                ●●● space-evenly: distribuye los items dejando el mismo espacio SOLAPADO a izquierda y derecha. <br><br>
+
+                ● align-CONTENT: alinea los ítems en el eje PRINCIPAL del contenedor, Permite manejar contenedores flex
+                multilínea, Estos contenedores dividen el eje principal en múltiples líneas, dado que los ítems
+                no caben en el ancho disponible.<br>
+                ●●● flex-start: agrupa los items al PRINCIPIO del eje principal. <br>
+                ●●● flex-end: agrupa los items al FINAL del eje principal. <br>
+                ●●● center: agrupa los items al CENTRO del eje principal. <br>
+                ●●● space-between: distribuye los items desde el INICIO hasta el FINAL. <br>
+                ●●● space-around: distribuye los items dejando el mismo espacio a los lados de cada uno. <br>
+                ●●●<b>stretch</b>: estira los items para ocupar de FORMA EQUITATIVA todo el espacio. <br><br>
+
+                ● align-items: Alinea los ítems del eje secundario, y toma los siguientes valores: <br>
+                ●●● flex-start: agrupa los items al PRINCIPIO del eje secundario. <br>
+                ●●● flex-end: agrupa los items al FINAL del eje secundario. <br>
+                ●●● center: agrupa los items al CENTRO del eje secundario. <br>
+                ●●● <b>stretch</b>: Alinea los ítems estirandolos de modo que cubran desde el inicio hasta el final del
+                contenedor. <br>
+                ●●● baseline: Alinea los ítems en el contenedor segun la base del contenido del los items del
+                contenedor. <br><br>
+                <a href="https://lenguajecss.com/css/maquetacion-y-colocacion/flexbox/#sobre-el-eje-secundario"
+                    target="_blank">EJEMPLO INTERACTIVO</a> <br><br>
+
+                ●align-self: actúa como align-items, pero sobre un ítem hijo específico,
+                sobreescribiendo su comportamiento. La propiedad puede tomar los
+                siguientes valores: flex-start, flex-end, center, stretch, baseline, <b>auto</b>. Este último hereda el
+                valor de align-items del padre (si no es ha definido es stretch). <br>
+                <a href="https://lenguajecss.com/css/maquetacion-y-colocacion/flexbox/#sobre-el-eje-secundario"
+                    target="_blank">EJEMPLO INTERACTIVO</a> <br><br>
+
+                <span id="titulo">atajo para align-content y justify-content</span>: place-content. <br><br>
+            </p>
+        </div>
+        <div id="div">
+            <p>
+                <span id="titulo">Propiedades de hijos</span><br>
+                -flex-grow: nro que indica factor de crecimiento del item respecto al resto. <b>por defecto es 0.</b>
+                -flex-shrink: al revés, aplica un factor de decrecimiento. <br>
+                -flex-basis: size, tamaño base de items antes de aplicar variacion. se puede poner <b>content</b> (que
+                ajusta
+                automáticamente el tamaño al contenido del ítem, que es su valor por
+                defecto.)<br>
+                -order: nro(peso) que indica el orden de aparicion de los items. <br>
+                <span id="titulo">atajo</span> propiedad llamada flex: < flex-grow > < flex-shrink > < flex-basis > <br>
+            </p>
+        </div>
+
+        <div id="div">
+            <p> <span id="titulo">Huecos (gaps)</span><br>
+                Establecen el tamaño del «hueco» entre ítems desde el elemento contenedor, sin necesidad de utilizar padding o margin en los elementos hijos. <br>
+                ● row-gap: size, espacio entre filas (solo si flex-direction: column)       <br>
+                ● column-gap: size, espacio entre columnas (solo si flex-direction: row)        <br>
+                Sólo una de las dos propiedades tendrá efecto, es posible usar ambas cuando flex-wrap: wrap, disponiendo de multicolumnas flexbox. <a href="https://lenguajecss.com/css/maquetacion-y-colocacion/flexbox/#huecos-gaps" target="_blank">ver ejemplo aca</a> </p>
+            </div>
+            <div id="div">
+                <p> <span id="titulo">Orden de los ítems</span><br>
+                    Si indicamos un order con un valor numérico, se reubican los ítems según su número, colocando primero los ítems con número más pequeño (incluso valores negativos) y después los ítems con números más
+altos. De esta forma reordenamos fácilmente los ítems, incluso utilizando media queries o responsive design. <br>
+                    ● order: <b>por defecto es 0</b>, modifica y establece el orden de los ítems según una secuencia numérica. <br>
+                    <a href="https://lenguajecss.com/css/maquetacion-y-colocacion/flexbox/#orden-de-los-%C3%ADtems" target="_blank">ver ejemplo aca</a> </p>
+            </div>
+    </main>
+    <footer>
+        <a href="#subir">Subir</a>
+    </footer>
+
+
+</body>
+
+</html>

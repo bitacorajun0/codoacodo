@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML3</title>
+    <link rel="icon" href="/img/burbuja.ico" type="image/x-icon">
+    <!--FAVICON: img en la barra de direcciones, es de 16x16 píxeles. Para agregarlo debemos tener la imagen .png como ícono en formato .ico, se puede convertir desde https://convertico.com/ y luego agregar en el head de nuestro documento HTML lo siguiente: 1. Buscar o crear una imagen .png  2. Ingresar en https://convertico.com/ 3. Seleccionar el archivo, convertirlo y descargarlo 4. En el head colocar la referencia con: link rel="icon" href="nombredelarchivo.ico"(en este ultimo poner ./ y buscar en la carpeta para seleccionar el archivo) -->
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <a href="http://www.google.com" target="_blank">Google</a>
+            <a href="/indexCSS.html">CSS</a>
+            <a href="/index1.html">Clase 1</a>
+            <a href="/index2.html">Clase 2</a>
+            <a href="/contacto.html">Contacto</a>
+            <a href="/index3.html">Clase 3</a>
+            <a href="/index4.html">Clase 4</a>
+            <a href="/indexHTML.html">Inicio</a>
+        </nav>
+        <br><br>
+        <a href="/txt/Clase 03.HTML.pdf" download="">descargar pdf de la clase</a><br>
+    </header>
+    <h2>tablas (h2)</h2>
+    <table border="1">
+        <tr>
+            <!-- tr(Table row) creando una fila, th(Table header) representa a una celda de encabezado y td(Table data cell) representa a cada celda y table es todo el elemento tabla -->
+            <th>primer cabecera</th>
+            <th>segunda cabecera</th>
+            <th>tercer cabecera</th>
+        </tr>
+        <tr>
+            <td>estoy adentro</td>
+            <td>de la</td>
+            <td>celda</td>
+        </tr>
+        <tr>
+            <td> 
+                <img src="/img/quienso.jpg" width="80" alt="amigos de bob esponja"> 
+            </td>
+            <td>celda</td>
+            <td>
+                <img src="/img/quienso.jpg" width="80" alt="amigos de bob esponja"> 
+            </td>
+        </tr>
+    </table>
+
+    <h2>titulo de tabla (h2)</h2>
+    <table border="2">
+        <tr>
+            <th>columna cabecera 1</th>
+            <th>columna cabecera 2</th>
+        </tr>
+        <tr>
+            <td>celda</td>
+            <td>celda</td>
+        </tr>
+        <tr>
+            <td>celda</td>
+            <td>celda</td>
+        </tr>
+    </table>
+    <hr>
+    <!-- rallita larga -->
+    <table border="3">
+        <tr>
+            <th>encabezado 1</th>
+            <th>encabezado 2</th>
+        </tr>
+        <tr>
+            <td colspan="2">celda de fila extendida a 2 columnas</td>
+            <!-- expando la fila -->
+        </tr>
+        <tr>
+            <td rowspan="2">celda de columna extendida a 2 columnas</td>
+            <!-- expando la columna -->
+            <td>celda</td>
+        </tr>
+        <tr>
+            <td>celda</td>
+        </tr>
+    </table>
+    <main>
+        <hr>
+        <iframe src="/index2.html" frameborder="0">texto para cuando el navegador no conoce la etiqueta
+            iframe</iframe>
+        <!-- pongo un iframe (recuadro, vista previa) de alguna pagina. incrustar otro documento HTML que se cargará en forma independiente en la página actual. -->
+        <!--Iframe: Mapas de Google: 1. Ingresar a https://www.google.com.ar/maps
+            2. Buscar una dirección (ej: Pueyrredón 400).
+            3. Compartir – Insertar un mapa – Copiar HTML.
+            4. Pegar el código en nuestro editor.
+        Videos de YouTube:
+            1. Buscar un video en YouTube
+            2. Clic derecho en el video - Copiar código de inserción.
+            3. Pegar el código en nuestro editor.
+        También podremos colocar otros mapas gratuitos contenido de Spotify, Vimeo e         inclusive incrustar otras páginas web,-->
+        <!--frameborder: 0: sin borde y 1: con borde-->
+        <hr>
+        <!--poner un video de yt pegando el vinculo desde compartir, insertar, bla bla-->
+        <iframe width="300" height="300"
+            src="https://www.youtube.com/embed/sepErRgJHbU?list=PL8x5kYLoGRia7WU0LudH7GyWr7bpTqVTi" title="HTML3 #22519"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <hr>
+    </main>
+    <footer>
+        <!--poner la dire como ya vimos antes, desde un vinculo-->
+        <a href="https://www.google.com/maps/place/Mart%C3%ADn+Fierro+949,+B1875DAH+Wilde,+Provincia+de+Buenos+Aires/@-34.6948972,-58.3085402,16.75z/data=!4m5!3m4!1s0x95a33241f45e7a01:0x829e7da9c54ae43e!8m2!3d-34.694903!4d-58.308663"
+            target="_blank">ir a mi casa desde (< a>)</a>
+        <br>
+        <!--poner la dire pegando el vinculo desde compartir, insertar, bla bla-->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.0840948147293!2d-58.308540186685185!3d-34.69489715838692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33241f45e7a01%3A0x829e7da9c54ae43e!2sMart%C3%ADn%20Fierro%20949%2C%20B1875DAH%20Wilde%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1663520945361!5m2!1ses-419!2sar"
+            width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <hr>
+        <!--  <audio src="./audio/AUTOMÁTICO.ogg"> -->
+        <audio controls>
+            <source src="/audio/AUTOMÁTICO.ogg" type="audio/ogg">
+            <!--source para cargar archivos de audio, poner varios formatos de un mismo sonido para que el navegador eligar cual usa y evitar que no los admita (son MP3, WAV, o OGG)-->
+            <!--atributos del audio: autoplay (que se reproduzca apenas carga la pagina), controls (que aparezca un cuadro de control, volumen pausa etc), loop (se reproduce infinito), muted (la salida de audio debe silenciarse), preload (almacenar temporalmente archivos de gran tamaño) y src (URL o ruta del archivo de audio)-->
+            <!--type= puede ser "audio/ogg" para ogg, "audio/mpeg" para mp3 y "audio/wav" para wav. lo lee de manera secuencias asi que el primero que enganche se produce-->
+            El texto entre las etiquetas < audio> y < / audio> solo se mostrará en navegadores que no admitan el
+                    elemento < audio>.
+        </audio>
+        <video controls width="250" height="250" src="/video/animales.mp4" type="video/mp4">
+            <!--es igual al audio, atributos: controls, autoplay, loop, muted, preload y src. tambien tiene height y width, y poster!! que muestra una imagen a modo de presentación.
+                    formatos: mp4 (video/mp4), ogg(video/ogg) y webm(video/webm)-->
+            El texto entre las etiquetas < video> y < / video> solo se mostrará en navegadores que no admitan el
+                    elemento < video>.
+        </video>
+        <footer id="footer" >
+            <a href="#header">Volver</a>
+</body>
+
+</html>

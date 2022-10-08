@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+
+#titulo{
+    font-size: 1.5em;
+    background-color: rgba(132, 93, 223, 0.5);
+    color: rgb(32, 25, 128);
+}
+
+#subtitulo{
+    font-family: 'Bungee Spice', cursive;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1.5em;
+}
+
+body{
+    background-image: url(/img/fondo.jpg);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    margin: 15px;
+    font-family:'Maven Pro', sans-serif;
+}
+
+#div{
+    margin: 10px;
+    border: 2px dotted royalblue;
+    padding: 15px;
+    background-color: rgb(32, 219, 157,0.2);
+    text-align: left;
+}
+/*Selector avanzado: >*/
+p > u{
+    background-color: rgba(169, 82, 231, 0.5);
+    font-size: 1.15em;
+}
+/*pseudoclase*/
+p::first-letter{
+    color:rgb(255, 255, 255);
+}
+/*pseudoclase para hipervinculo*/
+a:hover{
+    color:chocolate;
+    background-color: blue;
+}
+#ejemplonormal{
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    margin-left: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 61, 229);
+    border: 1px solid black;  
+}
+#ejemplo2dtranslate{
+    text-align: center;
+    padding: 20px;
+    margin-left: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 61, 61);
+    border: 1px solid black;
+    transform:translateX(375px)
+}
+#ejemplo2dscale{
+    text-align: center;
+    padding: 20px;
+    margin-left: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(54, 170, 60);
+    border: 1px solid black;
+    transform: translateX(775px) scale(2,3);
+}
+#ejemplo2drotate{
+    text-align: center;
+    padding: 20px;
+    margin-left: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(224, 241, 91);
+    border: 1px solid black;
+    transform: rotate(20deg);
+}
+#ejemplo2dskew{
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(69, 116, 225);
+    border: 1px solid black;
+    transform: translateX(375px) skew(35deg) ;
+}
+#ejemplo2dy3drotateZ{
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 61, 61);
+    border: 1px solid black;
+    transform: translateX(180px) rotateZ(25deg);
+}
+#ejemplo2dy3dscale3d{
+    text-align: center;
+    padding: 20px;
+    margin-left: 700px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(54, 170, 60);
+    border: 1px solid black;
+    transform: translateY(-150px) scale3d(2,2,1);
+}
+#ejemplo2dy3drotate3d{
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(69, 116, 225);
+    border: 1px solid black;
+    transform: translate(375px,-150px) rotate3d(1,9,2,128deg);
+}
+#transiciones{
+    margin: 5px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background: rgb(125, 119, 191);
+    transition: all width 2s, ease-in;
+}
+#transiciones:hover{
+    width: 300px;
+    transition-delay: 2s 
+}
+section div:hover{
+    width: 300px;
+    height: 300px;
+    transform: rotate(100deg);
+  }
+section div{
+    margin: 5px;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        background: rgb(181, 95, 227);
+        transition: width 2s, height 2s, transform 2s;
+      }
+      #div1 {transition-timing-function: linear;}
+      #div2 {transition-timing-function: ease;}
+      #div3 {transition-timing-function: ease-in;}
+      #div4 {transition-timing-function: ease-out;}
+      #div5 {transition-timing-function: ease-in-out;}
+      
+/*#animation{
+    width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: ejemplo;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}*/
+/*tambien se puede achicar asi:*/
+#animation{width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: ejemplo 4s 5s infinite alternate;
+}
+@keyframes ejemplo {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }

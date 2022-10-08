@@ -1,0 +1,2 @@
+Lorem
+Suele utilizarse, habitualmente, en páginas o secciones en construcción y se trata de un texto standard de relleno (dummy text) habitual en imprentas para probar una tipografía o diseño visualmente y anticipar el resultado final, sin que el contenido del texto distraiga al lector

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 3</title>
+    <link rel="icon" href="/img/bellota.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/main7.css">
+</head>
+
+<body>
+    <header>
+        <header>
+            <nav>
+                <a href="http://www.google.com" target="_blank">Google</a>
+                <a href="/indexHTML.html">HTML</a>
+                <a href="/indexCSS.html">Inicio</a>
+                <a href="/index5.html">Clase 1</a>
+                <a href="/index6.html">Clase 2</a>
+                <a href="/index7.html">Clase 3</a>
+                <a href="/index8.html">Clase 4</a>
+                <a href="/index9.html">Clase 5</a>
+                <a href="/index10.html">Clase 6</a>
+                <a href="/index11.html">Clase 7</a>
+                <a href="/index12.html">Clase 8</a>
+            </nav>
+            <h1 id="subir">Clase 3 de CSS</h1>
+            <a href="/txt/Clase07.CSS3.pdf" download="">Descargar pdf de la clase</a>
+            <hr>
+        </header>
+        <main>
+            
+            <p id="titulo">Modelo de caja</p>
+            <p>
+               <div id="div"><span id="subtitulo">-Borde(border):</span> Establece un límite entre la parte interior y la parte exterior de la caja,
+                tambien como margin tiene top, right, bottom y left. <br>
+                Propiedades básicas son border-color(color), border-width(tamaño de grosor) y border-style(estilo). El estilo de borde más frecuente es solid (borde liso y continuo), y que además es la opción por <b> defecto.</b> <br>
+                <span id="subtitulo"> Estilos:</span></div> 
+                <div id="border">
+                 hidden: Oculto. <br><br>
+                 <span id="dotted">dotted</span> : Borde basado en puntos. <br><br><br>
+                 <span id="dashed">dashed</span>: Borde basado en rayas (línea discontinua). <br><br><br>
+                <span id="solid"> solid</span>: Borde sólido (línea continua).<br><br><br>
+                <span id="double">double</span>: Borde doble (dos líneas continuas).<br><br><br>
+                <span id="groove">groove</span>: Borde biselado con luz desde arriba.<br><br><br>
+                <span id="ridge">ridge</span>: Borde biselado con luz desde abajo. Opuesto a groove.<br><br><br>
+                <span id="inset">inset</span>: Borde con profundidad «hacia dentro».<br><br><br>
+                <span id="outset">outset</span>: Borde con profundidad «hacia fuera». Opuesto a inset.<br><br>
+                **se pueden combinar todos, diferentes de cada lado**
+            </div>
+            </p>
+            <div id="div"> <span id="subtitulo"> -Margen(margin)</span>: es la parte exterior del elemento, por fuera del borde. Especifica el espacio que
+            existe entre el borde de un elemento y el borde de otros elementos adyacentes. Podemos aplicar diferentes
+            márgenes a cada zona de un elemento utilizando cada una de estas propiedades, o dejando al navegador que lo
+            haga de forma automática indicando el valor auto. Las opciones son:<br>
+            -margin-top: tamaño de margen superior <br>
+            -margin-left: tamaño de margen a la izquierda <br>
+            -margin-right: tamaño de margen a la derecha <br>
+            -margin-bottom: tamaño de margen inferior <br>
+            <span id="subtitulo">DATO:</span> los margenes no se suman cuando se tocan con otro de otro elemento, si A tiene 20px de margin y A
+            tambien, les queda entre ellos un margin de 20px, no de 40px. </div> 
+
+            <div id="div"> <span id="subtitulo"> -Relleno(padding)</span>: es la parte interior del elemento, entre el contenido y el
+            borde. (tambien como margin tiene top, right, bottom y left). Por defecto no hay relleno. </div>
+            <div id="div"> <span id="subtitulo">-Contenido(content)</span>: es la parte interior del elemento, excluyendo el relleno. <br>
+            El relleno y el margen son transparentes, por lo que en el espacio ocupado por el relleno se muestra el
+            color o imagen de fondo (si están definidos) y en el espacio ocupado por el margen se muestra el color o
+            imagen de fondo de su elemento padre (si están definidos). Si ningún elemento padre tiene definido un color
+            o imagen de fondo, se muestra el color o imagen de fondo de la propia página (si están definidos).
+        </div>
+            <div id="div"><span id="titulo">atajos para padding, margin y/o border:</span> si quiero que todos los lados midan lo mismo pongo solamente 1 vez medida. ej 10px; <br>
+                si pongo 2 medidas: la 1ra va a top/bottom (superior y inferior) y la 2da a right/left. ej: 10px; 20px;
+                <br>
+                si pongo 3 medidas: 1ra va a top, 2da a right/left y 3ra a bottom. ej: 10px; 20px; 10px; <br>
+                si pongo 4 medidas: respeta este orden top/right/bottom/left (tipo agujas del reloj). ej: 10px; 20px;
+                10px; 30px; <br>
+            <span id="titulo">atajo de border:</span>border: tamaño style color. ej border: 1px solid #000000.
+            </div>
+
+            <div id="div"><span id="titulo">límites máximos y mínimos</span>, donde el ancho o alto de la caja queda comprendido entre estos valores:
+                <br>
+                min-width,
+                max-width,
+                min-height,
+                max-height <br>
+                Pero va pisar al resto, no es recomendable. <U> VER MEJOR EN DISEÑO RESPONSIVO</U>
+            </div>
+
+<div id="div"><span id="titulo">zona de un elemento:</span><br>
+                -Top: Parte superior <br>
+                -Left: Parte izquierda <br>
+                -Right: Parte derecha <br>
+                -Bottom: Parte inferior <br>
+                -Center: Se refiere a la posición central entre los extremos horizontales y verticales.</div>
+
+<div id="div"><span id="titulo">Desbordamiento/overflow:</span><br>
+                Cuando el tamaño de alto y ancho a un elemento HTML es mas chico q su contenido de texto, hace que no
+                quepa dentro de la caja. <br>
+                Los atributos son: <u> overflow, overflow-x y overflow-y </u><br>
+                overflow-x y overflow-y permiten ocultar alguna barra de desplazamiento (habitualmente la barra de
+                desplazamiento horizontal). <br>
+                <u> Hay 4 valores para estos atributos: </u><br>
+                1 visible: Defecto. El desbordamiento no se recorta. El contenido se muestra fuera de la caja del
+                elemento. <br>
+                2 hidden: El desbordamiento se recorta y el resto del contenido será invisible. <br>
+                3 scroll: El desbordamiento se recorta y se agrega una barra de desplazamiento para ver el resto del
+                contenido. <br>
+                4 auto: Similar a scroll, pero agrega barras de desplazamiento solo cuando es necesario. <br>
+</div>
+
+<div id="div"><span id="titulo">Box-sizing:</span><br>
+                cuando se establece el ancho/alto de un elemento, el elemento a menudo parece más grande de lo que ha
+                establecido (porque el borde y el relleno del elemento se agregan al ancho/alto especificado del
+                elemento). cómo se debe calcular el ancho y el alto total de un elemento: <br>
+                -box-sizing: content-box: por defecto, no incluyen el borde, padding o margin. TENES QUE HACER LA CUENTA
+                DE CUANTO MIDE EL TOTAL DE LA CAJA, SUMANDOLE BORDE, PADDING Y MARGIN, NO ES RECOMENDABLE!!!!!!!!! <BR>
+                -box-sizing: border-box: Las propiedades width y height incluyen el contenido, padding y borde pero no
+                el margin.<br>
+                ej: * {<br>
+                box-sizing: border-box;<br>
+                } <br>
+            </div>
+            <p>
+                <div id="div"><span id="titulo">Posicionamiento:</span><br>
+                por defecto es el estático pero CSS permite al diseñador modificar la posición en la que se
+                muestra cada caja. la propiedad <b>position</b> tiene los siguientes valores que se puede discriminar
+                por top, bottom, left y right (si utilizamos left e indicamos 20px, estaremos indicando mover desde la
+                izquierda 20 píxeles hacia la derecha): <br>
+                -static: por defecto, no está posicionado con CSS.<br>
+                -relative: mediante las propiedades top | bottom | right y/o left el elemento se posiciona en
+                forma relativa a su contenedor, es decir, se mueve usando como punto de partida el lugar que ya esta
+                ocupando, es su propia referencia. <br>
+                -absolute: <mark> toma en cuenta el div completo en donde esta ubicado????</mark>. ej: Ejemplo: Si
+                establecemos left:40px, el elemento se colocará 40 píxeles a la derecha del extremo
+                izquierdo de la página. Sin embargo, si indicamos right:40px, el elemento se colocará 40 píxeles a
+                la izquierda del extremo derecho de la página. <br>
+                -fixed(fijo): la caja está posicionada con respecto a la ventana del navegador. Se mantiene en el
+                mismo lugar incluso al hacer scroll en la página. La referencia es el viewport, la parte visible
+                del navegador. ej: las publicidades q por mas que scrolee siguen apareciendo en el mismo lugar, la
+                config de cookies, a veces el header, el menu que queda fijo, los bot asistentes<br>
+                -sticky(pegajoso): al realizar un scroll y después de alcanzar una posición de desplazamiento
+                determinada, se “pega” al borde elegido. ej:Al hacer scroll y llegar a un elemento este podrá quedarse
+                fijo en la parte superior mientras continuamos haciendo scroll. No debemos confundir con el fijo ya que
+                no queda en una
+                posición fija, sino que flota respecto del fondo y se queda adherido a la parte superior. <br>
+                -z-index(profundidad):Establece el nivel de profundidad de un elemento sobre los demás. De esta forma,
+                podremos
+                superponer los elementos, quedando “apilados”. Los elementos se posicionan de acuerdo al nivel
+                de profundidad, quedando “encima” los que poseen un valor de index mayor. <a
+                    href="https://www.w3schools.com/cssref/pr_pos_z-index.asp" target="_blank">mas info de esto</a><br>
+
+                <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_position2" target="_blank">ver
+                    ejemplos de todo aca</a> <br>
+                </div>
+                <div id="prueba">
+                    absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute absolute 
+                </div>
+                <div id="prueba2">
+                    fixed <img src="/img/same.jpg" width="200px" alt="same">
+                </div>
+                <div id="prueba3">
+                    relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa relativa 
+                </div>
+        </main>
+        <footer>
+            <a href="#subir">Subir</a>
+        </footer>
+
+</body>
+
+</html>

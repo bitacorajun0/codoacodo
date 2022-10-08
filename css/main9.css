@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/img/ositos.jpg);
+    backdrop-filter: blur(6px);
+    padding: 10px;
+    margin: 15px;
+}
+
+h1{
+    color: rgba(55, 33, 221, 0.7);
+}
+
+#div{
+    background-color: rgba(212, 136, 233, 0.299);
+    border: 1px solid black;
+    margin: 15px;
+    padding: 10px;
+    font-size: medium;
+    font-style: italic;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#titulo{
+    font-size: 1.5em;
+    font-style:italic;
+    color: rgb(85, 85, 225);
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(131, 131, 188);
+  }
+
+.topnav a {
+    border: 0.2em solid;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+
+  .topnav a:hover {
+    background-color: rgb(234, 156, 215);
+    color: black;
+  }
+  @media screen and (max-width: 800px) {
+    .topnav a {
+        background-color: forestgreen;
+        float: none;
+         width: 100%;
+    }
+  }
+  .flex-container{
+    display: flex; /* flex todo en bloque o inline-flex todo en line*/
+    height: 500px;
+    /*-----flex-direction: row; /*row, row-reverse,column o column-reverse*/
+    /*-----flex-wrap: wrap; /*nowrap, wrap o wrap-reverse*/
+    flex-flow: column wrap; /*atajo para las dos anteriores, flex-direction y flex-wrap*/
+    justify-content: flex-end; /*flex-start, flex-end,center,space-between,space-aroud y space-evenly*/
+    align-items: stretch; /*flex-start, flex-end, center, stretch,baseline*/
+    /*estos dos que sigue no se van a aplicar ahora pq no tienen hijos*/
+   /* place-content: flex-start; /* ATAJO: primero aling-content y desp justify-content*/
+   column-gap: 15px; /*si estaba en flex-direction: row, podia poner: column-gap*/
+}
+.flex-container>div{
+    background-color: rgb(108, 108, 193);
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}

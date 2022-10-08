@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 1</title>
+    <link rel="icon" href="/img/bellota.ico" type="image/x-icon">
+    <!--aca linkeo para relacionar la hoja de estilos-->
+    <link rel="stylesheet" href="/css/estilos5.css">
+    <!--segunda forma de dar estilo-->
+    <!--SI ME PARO EN EL CUADRADITO DEL COLOR, SE AMPLIA PARA PODER ELEGIR EL Q YO QUIERA-->
+    <style>
+        h3 {
+            color: white;
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="http://www.google.com" target="_blank">Google</a>
+            <a href="/indexHTML.html">HTML</a>
+            <a href="/indexCSS.html">Inicio</a>
+            <a href="/index5.html">Clase 1</a>
+            <a href="/index6.html">Clase 2</a>
+            <a href="/index7.html">Clase 3</a>
+            <a href="/index8.html">Clase 4</a>
+            <a href="/index9.html">Clase 5</a>
+            <a href="/index10.html">Clase 6</a>
+            <a href="/index11.html">Clase 7</a>
+            <a href="/index12.html">Clase 8</a>
+        </nav>
+    <!--primer forma de dar estilo-->
+    <!--use span, elemento en linea-->
+        <h1 class="centrado" style="color: orange ; background-color:olivedrab ;  ">Clase 5, <span id="rosita"> CSS 1
+            con span</span> y div</h1>
+            <br>
+            <a href="/txt/Clase05.CSS1.pdf" download="">Descargar pdf de la clase</a> <hr>
+        <nav>
+            <!--aca use el atributo tabindex="número-->
+            <a href="">vacio, move el tab y ver el orden alterado con el tributo tabindex</a><br>
+            <a href="http://www.google.com" target="_blank" tabindex="1">Google</a>
+            <a href="http://www.google.com" target="_blank" tabindex="3">Google</a>
+            <a href="http://www.google.com" target="_blank" tabindex="2">Google</a>
+            <a href="http://www.google.com" target="_blank" tabindex="5">Google</a>
+            <a href="http://www.google.com" target="_blank" tabindex="4">Google</a>
+            <a href="http://www.google.com" target="_blank" tabindex="6">Google</a>
+            <div class="rojo">
+                <a href="http://www.google.com" target="_blank">Google <span id="negro"> con div y span</span></a>
+                <a href="http://www.google.com" target="_blank">Google <span id="negro"> con div y span</span></a>
+                <a href="http://www.google.com" target="_blank">Google <span id="negro"> con div y span</span></a>
+            </div>
+            <a href="http://www.google.com" target="_blank">Google</a>
+            <a href="http://www.google.com" target="_blank">Google</a>
+            <!--aca use el atributo draggable="false-->
+            <a href="http://www.google.com" target="_blank" draggable="false">este ultimo Google no se puede arrastrar,
+                atributo draggable="false</a>
+        </nav>
+    </header>
+    <!--ATRIBUTO PARA TODAS LA ETIQUETAS
+    -HIDDEN: El atributo oculto también se puede usar para evitar que un usuario vea un elemento hasta que se cumpla alguna otra condición (como seleccionar una casilla de verificación, etc.). Luego, un JavaScript podría eliminar el atributo oculto y hacer que el elemento sea visible 
+    -title="texto": CUANDO ME PARO CON EL CURSO POR ARRIBA ME LEE ESTA INFO.Especifica información extra sobre un elemento (Tooltip Text).
+    -translate="yes|no": Indica si el texto del contenido del elemento y los valores del atributo deben ser traducidos o no. La opción por defecto es yes.
+    -spellcheck="true|false": Especifica si se debe corregir o no la gramática y la ortografía del elemento.
+    -draggable="true|false": Indica si el elemento es arrastrable; se puede mover haciendo click sin soltar, moviéndolo a una nueva posición en la ventana.
+    -tabindex="número": Especifica la posición del elemento en el orden de tabulación del documento. Se usa para tabular a través de los links de la página (o campos de un formulario).
+-???????lang=”es”: Especifica el idioma del contenido del elemento.
+    -accesskey: acceso directo, accesskey="h", ej Firefox: [ALT] [SHIFT] + accesskey
+    y mas atributos en https://www.w3schools.com/tags/ref_standardattributes.asp
+    -->
+    <!-- Nota: Con display: inline el span no atiende a la propiedades de alto (height) y ancho (width) ya que se adaptará al tamaño del contenido. Cambiando a display: inline-block se permiten estas propiedades, porque se comporta como un div. Se puede hacer que un span se comporte como un div si en CSS agrego display:block. https://www.w3schools.com/css/css_inline-block.asp -->
+    <main>
+        <p>Otro ejemplo de div y span:</p>
+        <span style="color:red">Un texto en span </span>
+        <span style="color:blue">Otro texto en span</span>
+        <div style="color: violet">Un texto con div</div>
+        <div style="background-color:lightblue">Otro texto con div</div>
+        <h2 class="centrado" title="agregue solamente title= y esta leyenda a la etiqueta h2">ejemplo de h2, PONE EL
+            CURSOR ARRIBA PARA VER ALGO</h2>
+        <h3>esto es un h3</h3>
+        <!--aca use el atributo spellcheck="false-->
+        <h4 spellcheck="false">esto es un h4. LA HIDEA ES KE /SI O NO/ ME KORRIGA NUNKA LAS FALTAZ DE HORTOGRAFIA EN
+            HESTE LUJAR, BER ATRIVUTHO</h4>
+        <h5>esto es un h5</h5>
+        <!--no es, pero es un boton que cambia el texto-->
+        <p id="myHeader">es un parrafo</p>
+        <button onclick="displayResult()">Cambiar texto</button>
+        <script>
+            function displayResult() {
+                document.getElementById("myHeader").innerHTML = "texto cambiado";
+            }
+        </script>
+        <h6>esto es un h6</h6>
+        <!--aca use el atributo traslate= no-->
+        <div translate="no">
+            <p>When You're Gone, Avril Lavigne</p>
+            I always needed time on my own <br>
+            I never thought I'd<br>
+            Need you there when I cry<br>
+            And the days feel like years when I'm alone<br>
+            And the bed where you lie<br>
+            Is made up on your side<br>
+            When you walk away <br>
+            I count the steps that you take<br>
+            Do you see how much I need you right now?<br>
+            When you're gone<br>
+            The pieces of my heart are missin' you<br>
+            When you're gone<br>
+            The face I came to know is missin', too<br>
+            When you're gone<br>
+            The words I need to hear<br>
+            To always get me through the day<br>
+            And make it okay<br>
+            I miss you<br>
+            <br>
+            <br>
+        </div>
+    </main>
+    <footer>
+        <a href="#rosita">Subir</a>
+    </footer>
+</body>
+
+</html>

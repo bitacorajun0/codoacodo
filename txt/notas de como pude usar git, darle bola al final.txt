@@ -1,0 +1,33 @@
+como ver la pagina que subi a github?
+voy a settings, pages, en branch selecciono a que lo voy a aplicar (main en este caso) y click en save. espero unos varios minutos y deberia figurarme la url de la pagina web.
+
+para guardas mis cambios en visual code: voy a la terminal (ctrl + ñ), git add ., git commit -m " 
+
+agregar colaboradores en github: settings, colaboradores, y agrego su mail, 
+
+
+
+
+en github cree repositorio llamado codoacodo
+en mi carpeta de la clase de git, hice una carpeta que se llama pruebagit y dentro hice un index llamado index2.html
+
+open folder de la carpeta esta, ctrl + ñ, me fijo que este situado en esta carpeta unicamente, git init, git status (me tiene que mostrar que no esta cargado, en rojo), git add . y lo cargo en verde para que pase a mi staging area.
+
+ahora pongo git commit -m "pruebagit", git status y me muestra que ya esta todo commiteado, y quedo en mi local repo.
+
+para pasar esto mi repo externo, voy a github, mi repositorio, en mi terminal de vs git branch -M main para crear la rama main, relaciono mi git al index (git remote add origin https://github.com/bitacorajun0/codoacodo.git) y que ponga todos los archivos en github en la rama main que cree recien (git push -u origin main)
+
+para hacer otra version: git branch -m "segunda version", luego git push y se tiene que actualizar tambien en github 
+
+
+
+
+
+
+repositorio en github: dale
+carpeta: dale
+1er commit "se agrega el proyecto"
+2do commit "segunda version"
+
+
+guardo el cambio, git status, git add ., git commit -m "otro cambio mas", y git push -u origin main, espero a que cargue y ya tengo el archivo nuevo en git hub.

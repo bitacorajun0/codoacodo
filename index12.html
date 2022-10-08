@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIT</title>
+    <link rel="icon" href="/img/bellota.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/main12.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="http://www.google.com" target="_blank">Google</a>
+            <a href="/indexHTML.html">HTML</a>
+            <a href="/indexCSS.html">Inicio</a>
+            <a href="/index5.html">Clase 1</a>
+            <a href="/index6.html">Clase 2</a>
+            <a href="/index7.html">Clase 3</a>
+            <a href="/index8.html">Clase 4</a>
+            <a href="/index9.html">Clase 5</a>
+            <a href="/index10.html">Clase 6</a>
+            <a href="/index11.html">Clase 7</a>
+            <a href="/index12.html">Clase 8</a>
+        </nav>
+        <h1 id="subir">Clase 8 de Git y Github</h1>
+        <a href="/txt/Clase12.GIT.pdf" download="">Descargar pdf de la clase</a>
+        <hr>
+    </header>
+    <main>
+        <p><a href="/indexDALE.html" target="_blank">primer repositorio que me funciona</a></p>
+        <div class="container">
+            <span id="titulo">Terminología</span><br>
+            ● <b>Repositorio:</b> es la carpeta principal donde se encuentran almacenados los archivos que componen el
+            proyecto, es configurado como un repositorio local. <br>
+            ● <b>Commit:</b> un commit es el estado de un proyecto en un determinado momento de la historia del mismo.
+            Depende de nosotros determinar cuántos y cuales archivos incluirá cada commit. <br>
+            ● <b>Rama (branch):</b> una rama es una línea alterna del tiempo en la historia de nuestro repositorio.
+            Funciona para crear , arreglar bugs(errores), experimentar, sin afectar la versión estable o principal del
+            proyecto. La rama principal por defecto es master. <br>
+            ● <b>Pull Request:</b> en proyectos con un equipo de trabajo, cada persona puede trabajar en una rama
+            distinta, pero llegado el momento puede pasar que dicha rama se tenga que unir a la rama principal. Para eso
+            se crea un pull request donde comunicamos el código que incluye los cambios, es revisado, comentado y
+            aprobado para darle merge. En el contexto de GIT, <b>merge significa unir dos trabajos</b>, en este caso la
+            rama branch con la <b>rama master.</b>
+        </div>
+        <div class="container">
+            <span id="titulo">Estados</span><br>
+            <b>Working directory:</b> es nuestro directorio de trabajo, la inicializo una sola vez en toda la historia del proyecto, crea una carpeta oculta de algo??. <br>
+            Cuando tengo listo mi trabajo, lo paso a area de ensayo (git commit - m mas el nombre del trabajo, le tengo que dar algun nombre de esa version, no se tiene que repetir, tiene que decir bien que cambios estoy pasando): Cada vez que queremos agregar un archivo al <b>staging area (area de ensayo),</b> usamos <b>git add o git add . (para que pase sobre la carpeta que estoy trabajando)</b>.
+            <br>
+            Luego, cuando queremos establecer un punto de restauración, ejecutamos <b>git commit,</b> y los archivos son
+            actualizados en el repositorio <b>(repository)</b>.
+            Luego, una vez que tengo todo en mi repositorio local, lo puedo subir a <b>GITHUB</b>, para eso me creo un usuario y un repositorio de trabajo remoto, lo creo y me da una url, y ahi por unica vez relaciono mi directorio de trabajo local con mi url en Github. <br>
+
+            <span id="titulo">Ramas (branch y merge)</span><br>
+            ● Crear una rama: <b>git branch</b> nombreBranch <br>
+            ● Unir la rama a Master: <b>git merge</b> nombreBranch <br>
+            ● Mostrar en qué rama nos encontramos: <b>git branch</b> <br>
+            ● Cambiar a una rama determinada: <b>git checkout</b> nombreBranch
+        </div>
+        <div class="container">
+            <span id="titulo">Comandos básicos</span> <br> <br>
+            Una vez instalado <b>git</b> y con la consola <b>Git Bash</b> de comandos abierta (puede ser la terminal de
+            VSCode), podemos utilizar comandos para movernos por el árbol de directorios (carpetas), ver su contenido,
+            crear carpetas nuevas,etcétera. <br> 
+
+            <table class="table table-striped
+                table-hover	
+                table-borderless
+                table-primary
+                align-middle">
+                <thead>
+                    <tr>
+                        <th>Comando</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>pwd</th>
+                        <td>Ver en qué carpeta estamos ubicados. (PWD: print working directory)</td>
+                    </tr>
+                    <tr>
+                        <th>ls</th>
+                        <td>Mostrar el contenido de la carpeta. Agregando <b>-l o -lh</b> obtenemos más detalle y con
+                            <b>-la </b> muestra los archivos ocultos.</td>
+                    </tr>
+                    <tr>
+                        <th>clear o CTRL+L</th>
+                        <td>Limpiar la pantalla.</td>
+                    </tr>
+                    <tr>
+                        <th>cd carpeta</th>
+                        <td>Cambia de Carpeta o Directorio (cd: change directory).</td>
+                    </tr>
+                    <tr>
+                        <th>mkdir nombrecarpeta</th>
+                        <td>Nos permite crear una carpeta.(MK: Make Directory)</td>
+                    </tr>
+                    <tr>
+                        <th>rm archivo.ext</th>
+                        <td>Elimina el archivo, donde <b>ext</b> es la extensión. (Remove)</td>
+                    </tr>
+                    <tr>
+                        <th>rm - r nombredecarpeta/</th>
+                        <td>Elimina la carpeta con todo su contenido. (remove recursivo)</td>
+                    </tr>
+                    <tr>
+                        <th>mv nombreoriginal.ext nombrenuevo.ext</th>
+                        <td>Renombra un archivo a carpeta</td>
+                    </tr>
+                    <tr>
+                        <th>exit</th>
+                        <td>Salimos de la terminal.</td>
+                    </tr>
+                    <tr>
+                        <th>help</th>
+                        <td>Muestra todos los comandos.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <span id="titulo">Registrar mis datos en git</span> <br> 
+            Antes de realizar algunas de las operaciones más importantes de git, necesitamos indicar cuál es nuestra dirección de correo y cuál es nuestro nombre. Esto se hace con los comandos siguientes: <br> 
+            ● Proporcionar la dirección de correo: <br> 
+            git config --global user.email "correodelusuario@dominio.com" <br> 
+            ● Proporcionar el nombre del propietario: <br> 
+            git config --global user.name "NombreDelUsuario" <br> 
+            ● Consultar los datos que tenemos registrados: <br> 
+            git config --global -e
+        </div>
+        <div class="container">
+            <span id="titulo">Comentarios de la clase</span> <br>
+            Seguramente una persona crea el repositorio, y las otras personas van a tener que ser agregadas como colaboradores, todos van a tener acceso al codigo, tanto del index como de las otras paginas que creen. <br>
+            El tema es que el que creo el repositorio es el que daria labor de merge para mezclar las ramas, los colaboradores pueden editar el codigo pero no lo pueden actualizar en tiempo real. <br>
+            El merge lo tiene que hacer el full request, esto les avisa al creador del repositorio de que tal usuario esta intentando hacer una modificacion y tiene que dar el ok. <br>
+        </div>
+
+
+        <div class="container">
+            <span id="titulo">Como usar Git</span> <br> 
+            ●  Inicializar una carpeta: El primer paso para utilizar git en un proyecto consiste en inicializar la carpeta que lo contiene, convirtiéndola en un repositorio local. <br>
+            Para ello, utilizando los comandos provistos por el sistema operativo <b>debemos ubicarnos en ella, y utilizar el comando git init.</b>  <br>
+            Esto genera por defecto una rama llamada “master”. <br>
+            ●  Ver y cambiar el nombre a la rama actual: Para ver el estado de la rama actual y su contenido utilizamos <b>git status</b>. <br>
+            Es posible cambiar el nombre a la rama actual con el comando <b>git branch -m < nombre ></b> <br>
+            Actualmente se está realizando una campaña para utilizar como rama principal main en lugar de master. (????) <br>
+            ●  Ver el estado de los archivos: Podemos ver el estado de los archivos que contiene la carpeta controlada por git usando <b>git status.</b> En color <span style="color: red;">rojo</span> vemos archivos agregados/modificados, que aún no se han incluido en el <b>staging area.</b><br>
+            ● <b>git add</b> incorpora los archivos que han sido creados o modificados recientemente al <b>staging area.</b> Se puede agregar un archivo con: <b>git add < archivo >.</b> <br> O todos con <b>git add .</b><br>
+            Los archivos listos para ser commiteados aparecen ahora en <span style="color: green;">verde</span>. <br>
+            ● Agregar archivos al repositorio local: Los archivos del <b>staging area</b> se envían al repositorio local utilizando el comando <b>git commit -m ”comentario”,</b> donde “comentario” es una explicación de los cambios implicados. Es importante incluir una descripción relevante en cada commit, ya que será lo que git nos mostrará cuando veamos el “historial” de cambios realizados. <br>
+            Cada vez que realizamos un <b>commit,</b> git genera un punto de restauración al cual es posible volver en cualquier momento. <br>
+            Si <b>no incluimos el comentario (git commit),</b> y hemos configurado un editor de texto, git abre una ventana para que lo hagamos. Grabamos, cerramos, y el commit se habrá realizado. <br>
+            ●  Ver snapshots (instantaneas) creados: Luego de hacer el commit, si queremos obtener un historial de los cambios realizados en los archivos que integran nuestro repositorio usamos <b>git log.</b><br>
+            El ciclo de trabajo, entonces, consiste en editar los archivos, enviarlos al staging area, y cuando estamos listos, hacemos un <b>commit</b>.
+            Repetimos este proceso las veces que sea necesario. <br>
+            ●  Ver cambios en un archivo: Con <b>.git diff < archivo ></b>. podemos ver que líneas se agregaron <span style="color: green;">(verde)</span>, eliminaron <span style="color: red;">(rojo)</span> o modificaron <span style="background-color: black; color: yellow;">(amarillo)</span> entre la versión actual del mismo y la del último commit.<br>
+            Existen tres maneras de descartar cambios que hayamos realizado: <br>
+            *<b>git checkout</b>: descarta los cambios sobre el archivo y vuelve a la versión que esté en el último commit del repositorio.<br>
+            *<b>git reset --hard</b>: descarta todos los cambios no commiteados, sin guardarlos. Vuelve a las versiones del último commit realizado.<br>
+            *<b>git stash</b>: (reserva) descarta todos los cambios no commiteados, guardándolos para poder recuperarlos en un futuro.<br>
+            ●  Recuperar cambios que han sido descartados: Los cambios que han sido descartados con <b>git stash</b> pueden ser recuperados.<br>
+            *<b>git stash list</b>: lista todos los “puntos de restauración” que hemos generado con “stash”. El más reciente tiene el índice 0 (cero).<br>
+            *<b>git stash show – p < stash-name ></b>: Muestra los cambios que se encuentran guardados en un stash en particular.<br>
+            *<b>git stash apply < stash-name ></b>: Recupera los cambios desde un stash en particular (no se elimina el punto de restauración).<br>
+            *<b>git stash drop < stash-name ></b>: Elimina un “punto de restauración” de forma definitiva, y la pila de cambios stasheados se reordenará. Esta acción es irreversible.<br>
+            ●  Ignorar archivos o carpetas: Cuando no necesitamos que todos los archivos de nuestro proyecto sean gestionados por git podemos hacer una lista con los archivos y/o carpetas a excluir, y guardarla en un archivo de texto que tenga el nombre <b>.gitignore</b>. Se debe poner un nombre por línea, y todos los archivos allí listados serán ignorados por git.<br>
+            <b>● ● ●   Ramas (branch)</b>: <br>
+            Podemos crear una nueva rama en nuestro proyecto, mediante estos comandos:<br>
+            *<b>git branch</b>: muestra la(s) ramas que componen el proyecto.<br>
+            *<b>git branch < nombre de la rama ></b>: crea una nueva rama con el nombre indicado<br>
+            *<b>git checkout < nombre de la rama ></b>: cambio a otra rama para trabajar en ella.<br>
+        </div>
+        <div class="container">
+            <span id="titulo">Sumando Github</span> <br>
+            ●  Crear y vincular repositorio remoto: Creamos un repositorio, le damos un nombre y lo enlazamos con nuestro repositorio local mediante el comando que nos muestra la plataforma. <br>
+            ●  Sincronizando con GitHub (push): El comando <b>git push -u origin < rama ></b> sincroniza una rama del repositorio local con el repositorio externo. Necesitamos el nombre de usuario en GitHub y un token que se obtiene desde “Usuario -> Settings -> Developer settings -> Personal tokens”. Ejecutado este comando, el repositorio se sincroniza y podemos verlo en GitHub. <br>
+            *<b>git push</b>: es un comando de carga que permite subir los commits realizados en nuestro repositorio local a GitHub. Una vez allí, estos pueden ser descargados por el resto del equipo de trabajo. <br>
+            *<b>git push < remote > < branch ></b>: Para crear una rama local en el repositorio de destino. <br>
+            *<b>git push < remote > --all</b>: Si queremos enviar todas las ramas locales a una rama remota especificada. <br>
+            Una vez movidos los conjuntos de cambios se puede ejecutar un comando git merge en el destino para integrarlos, <a href="https://www.atlassian.com/es/git/tutorials/syncing/git-push" target="_blank">+ info aca</a> <br>
+            *<b>git clone < url repositorio externo ></b>: En caso de querer sincronizar nuestro trabajo con el de otro usuario, en forma local, podemos clonar su repositorio. <br>
+            Hacer los cambios necesarios, commitearlos, y luego, con push, enviarlos nuevamente al repositorio remoto. En este caso, en el push usaremos nuestro usuario y el token del propietario del repositorio. <br>
+            De esta forma vemos en GitHub los commits hechos hasta el momento, tanto del propietario del repositorio como del colaborador. <br>
+            *<b>git pull</b>: se emplea para extraer y descargar contenido desde un repositorio remoto y actualizar al instante el repositorio local para reflejar ese contenido. El comando git pull es, en realidad, una combinación
+            de dos comandos, <b>git fetch seguido de git merge</b>. <br>
+            *<b>git pull < remote ></b>: Recupera la copia del origen remoto especificado de la rama actual y la fusiona de inmediato en la copia local. <br>
+            *<b>git pull --no-commit < remote ></b>: Recupera la copia del origen remoto, pero no crea una nueva conformación de fusión. <br>
+            <span id="titulo">Conflictos</span> <br>
+            Un <b>merge</b> se genera cuando dos o más commits contienen cambios sobre las mismas líneas de código de los mismos archivos. En ocasiones, git no puede resolver la situación automáticamente. Al realizar el pull request aparece el conflicto, y se nos pide que lo solucionemos manualmente, lo resolvemos eliminando la(s) línea(s) que no sean pertinentes y lo marcamos como “resolved”. Hacemos el commit merge, y el archivo finalmente quedará con los cambios elegidos. <br>
+        </div>
+        <div class="container">
+            <span id="titulo">CHUSMIAR COMO CLONAR UN REPOSITORIO EN UNA CARPETA PARA TRABAJAR EN GRUPO!!!</span> <br>
+        </div>
+        <div class="container">
+            <span id="titulo">Artículos de interés:</span><br>
+            <img width="550" src="./img/extra.jpg" alt="">
+            <img width="450" src="./img/extra2.jpg" alt=""> <br>
+            <a href="https://docs.github.com/en/get-started/quickstart/set-up-git" target="_blank">Guía rápida sobre GitHub:</a> <br>
+            <a href="https://bluuweb.github.io/tutorial-github/guia/fundamentos.html" target="_blank">GIT</a> <br>
+            <a href="https://bluuweb.github.io/tutorial-github/guia/github.html" target="_blank">GitHub</a> <br>
+            <a href="https://gist.github.com/dasdo/9ff71c5c0efa037441b6" target="_blank">Comandos explicados</a> <br>
+            <a href="https://www.youtube.com/watch?v=ptXiQwE535s&list=PLoCpUTIZIYORkDzYwdunkVf-KIqGjyoot" target="_blank">Videos del Profesor Alejandro Zapata (Coordinador y Docente de Codo a Codo):</a> <br>
+            <a href="https://www.youtube.com/watch?v=hWglK8nWh60&list=PLPl81lqbj-4I8i-x2b5_MG58tZfgKmJls" target="_blank">GIT y GitHub (tutorial en español). Inicio Rápido para Principiantes</a> <br>
+            <a href="https://www.youtube.com/watch?v=AYbgqmyg7dk&feature=youtu.be" target="_blank">¿Cómo trabajar con Git desde Visual Studio Code?</a> <br>
+        </div>
+    </main>
+
+    <footer>
+        <a href="#subir">Subir</a>
+    </footer>
+</body>
+
+</html>
